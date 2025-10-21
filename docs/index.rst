@@ -1,14 +1,14 @@
 Molecular Emission Line Tool (MELT)
 ===================================
 
-MELT is an interactive web-based search tool for molecular emission lines from spectroscopic databases.
+MELT is an interactive spectroscopic database for molecular emission lines with the function of search and simple visualization.
 
 🔗 **Live Tool**: https://copland-yz.github.io/MELT/
 
 Overview
 --------
 
-MELT provides an intuitive interface for searching, visualizing, and analyzing molecular emission lines. The tool features:
+MELT provides:
 
 * Interactive periodic table for element filtering
 * Search by wavelength, frequency, or wavenumber

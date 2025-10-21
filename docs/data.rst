@@ -9,13 +9,12 @@ Current Database
 
 **Pearse & Gaydon (1976)**
 
-* Full citation: Pearse, R. W. B., & Gaydon, A. G. (1976). *The identification of molecular spectra* (4th ed.). Chapman and Hall.
+* Citation: Pearse, R. W. B., & Gaydon, A. G. (1976). *The identification of molecular spectra* (4th ed.). Chapman and Hall.
 * **Coverage**: ~10,000 emission lines
-* **Wavelength range**: 200-10,000 nm (UV to near-IR)
-* **Molecules**: CO, CN, OH, C2, H2, N2, NO, CH, NH, and many others
+* **Wavelength range**: 200-2,000 nm (UV to near-IR)
 * **Precision**: Typically 0.01-0.1 nm
 
-Data Format
+Data Description
 -----------
 
 Each emission line includes:
@@ -47,7 +46,7 @@ Emission lines are modeled as Gaussian peaks:
 
 .. math::
 
-   I(\\lambda) = I_0 \\cdot \\exp\\left(-\\frac{(\\lambda - \\lambda_0)^2}{2\\sigma^2}\\right)
+   I(\lambda) = I_0 \cdot \exp\left(-\frac{(\lambda - \lambda_0)^2}{2\sigma^2}\right)
 
 Where:
 
@@ -112,13 +111,6 @@ Limitations
 
 For absolute intensity measurements or high-precision work, consult original sources.
 
-Performance
------------
-
-* **Database size**: ~10,000 lines
-* **Search time**: <100ms on modern hardware
-* **Spectrum generation**: <200ms for 100 lines
-* **Browser compatibility**: Chrome, Firefox, Safari, Edge (version 90+)
 
 References
 ----------
@@ -129,5 +121,6 @@ Pearse, R. W. B., & Gaydon, A. G. (1976). *The identification of molecular spect
 
 **Additional resources**:
 
-* NIST Chemistry WebBook: https://webbook.nist.gov/chemistry/
+* NIST Atomic Spectra Database: https://physics.nist.gov/PhysRefData/ASD/lines_form.html
 * Atomic Line List: https://www.pa.uky.edu/~peter/atomic/
+* NIST LIBS Database: https://physics.nist.gov/PhysRefData/ASD/LIBS/libs-form.html

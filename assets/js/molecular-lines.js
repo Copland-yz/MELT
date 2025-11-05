@@ -224,6 +224,21 @@ function resetElements() {
     });
 }
 
+function clearSearchResults() {
+    // Clear the search results array
+    currentSearchResults = [];
+
+    // Clear any selected lines
+    clearSelectedLines();
+
+    // Reset the search results display to initial state
+    const resultsDiv = document.getElementById('search-results');
+    resultsDiv.innerHTML = '<p>Enter search parameters and click "Search Emission Lines" to find molecular emission lines.</p>';
+
+    // Hide the spectrum section
+    document.getElementById('spectrum-section').style.display = 'none';
+}
+
 async function performSearch() {
     // Load database if not already loaded
     if (!isDataLoaded) {

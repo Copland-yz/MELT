@@ -616,21 +616,27 @@ function parseIntensity(intensityStr) {
 // Function to generate spectrum
 function generateSpectrum() {
     console.log('Generate spectrum called, selected lines:', selectedLines.length);
-    
+
     if (selectedLines.length === 0) {
         alert('Please select at least one line to generate a spectrum.');
         return;
     }
-    
+
     // Debug: Log selected lines
     console.log('Selected lines:', selectedLines);
-    
+
     // Check for null intensities
     const invalidLines = selectedLines.filter(line => parseIntensity(line.intensity) === null);
     if (invalidLines.length > 0) {
         const invalidMolecules = invalidLines.map(line => `${line.molecule} (${line.wavelength_nm}nm)`).join(', ');
         alert(`Cannot generate spectrum: The following lines have null/invalid intensity values: ${invalidMolecules}. Please deselect these lines or choose different ones.`);
         return;
+    }
+
+    // Check if all selected lines belong to the same molecule
+    const uniqueMolecules = [...new Set(selectedLines.map(line => line.molecule))];
+    if (uniqueMolecules.length > 1) {
+        alert('Warning: Relative intensity is only meaningful when comparing the same molecule.\n\nYou have selected lines from multiple molecules: ' + uniqueMolecules.join(', '));
     }
     
     // Get peak width from user input

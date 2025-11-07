@@ -786,11 +786,18 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
         // Prepare datasets
         const datasets = [];
 
+        // Calculate maximum intensity from continuous data for proper scaling
+        let maxIntensity = 10; // Default if no continuous data
+        if (continuousData && continuousData.length > 0) {
+            const intensities = continuousData.map(p => p.y);
+            maxIntensity = Math.max(...intensities);
+        }
+
         // Add continuous spectrum first
         if (continuousData && continuousData.length > 0) {
             console.log('Adding continuous spectrum dataset with', continuousData.length, 'points');
             datasets.push({
-                label: 'Example Spectrum',
+                label: 'Lines with intensity data',
                 data: continuousData,
                 backgroundColor: 'rgba(255, 87, 34, 0.1)',
                 borderColor: '#FF5722',
@@ -803,7 +810,8 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
                 showLine: true,
                 tension: 0,
                 fill: false,
-                type: 'line'
+                type: 'line',
+                order: 1
             });
         } else {
             console.warn('No continuous data to display');
@@ -813,31 +821,46 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
         if (nullIntensityLines && nullIntensityLines.length > 0) {
             console.log('Adding null intensity lines as vertical dashed lines');
 
-            // Calculate maximum intensity from continuous data for proper scaling
-            let maxIntensity = 10; // Default if no continuous data
-            if (continuousData && continuousData.length > 0) {
-                const intensities = continuousData.map(p => p.y);
-                maxIntensity = Math.max(...intensities);
-            }
+            // Add a legend entry for null intensity lines (using the first line as representative)
+            const firstNullLine = nullIntensityLines[0];
+            datasets.push({
+                label: 'Lines with null intensity',
+                data: [
+                    { x: firstNullLine.x, y: 0 },
+                    { x: firstNullLine.x, y: maxIntensity * 1.1 }
+                ],
+                borderColor: 'rgba(128, 128, 128, 0.7)',
+                borderWidth: 2,
+                borderDash: [5, 5],
+                pointRadius: 0,
+                showLine: true,
+                fill: false,
+                type: 'line',
+                molecule: firstNullLine.molecule,
+                wavelength: firstNullLine.x,
+                order: 2
+            });
 
-            nullIntensityLines.forEach(line => {
-                // Create a vertical line dataset for each null intensity line
-                // Line extends from 0 to slightly above the maximum intensity
+            // Add remaining null intensity lines (hidden from legend)
+            nullIntensityLines.slice(1).forEach(line => {
                 datasets.push({
                     label: `${line.molecule} - ${line.x.toFixed(2)} nm (no intensity)`,
                     data: [
                         { x: line.x, y: 0 },
-                        { x: line.x, y: maxIntensity * 1.1 }  // Extend to 110% of max
+                        { x: line.x, y: maxIntensity * 1.1 }
                     ],
                     borderColor: 'rgba(128, 128, 128, 0.7)',
                     borderWidth: 2,
-                    borderDash: [5, 5],  // Dashed line pattern
+                    borderDash: [5, 5],
                     pointRadius: 0,
                     showLine: true,
                     fill: false,
                     type: 'line',
                     molecule: line.molecule,
-                    wavelength: line.x
+                    wavelength: line.x,
+                    order: 2,
+                    hidden: false,
+                    showInLegend: false  // Custom property to track legend visibility
                 });
             });
         }
@@ -890,7 +913,20 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
                         }
                     },
                     legend: {
-                        display: false
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: {
+                                size: 12
+                            },
+                            padding: 15,
+                            usePointStyle: true,
+                            filter: function(legendItem, chartData) {
+                                // Hide datasets that have showInLegend: false
+                                const dataset = chartData.datasets[legendItem.datasetIndex];
+                                return dataset.showInLegend !== false;
+                            }
+                        }
                     }
                 },
                 scales: {

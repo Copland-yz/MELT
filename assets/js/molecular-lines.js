@@ -921,8 +921,8 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
                             },
                             padding: 15,
                             usePointStyle: false,
-                            boxWidth: 50,
-                            boxHeight: 3,
+                            boxWidth: 40,
+                            boxHeight: 15,
                             filter: function(legendItem, chartData) {
                                 // Hide datasets that have showInLegend: false
                                 const dataset = chartData.datasets[legendItem.datasetIndex];

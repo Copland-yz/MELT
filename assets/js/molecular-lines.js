@@ -938,7 +938,7 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
 
                                     return {
                                         text: dataset.label,
-                                        fillStyle: dataset.borderColor,
+                                        fillStyle: 'transparent',
                                         strokeStyle: dataset.borderColor,
                                         lineWidth: dataset.borderWidth,
                                         lineDash: dataset.borderDash || [],

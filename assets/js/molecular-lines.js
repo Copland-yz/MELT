@@ -920,11 +920,32 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
                                 size: 12
                             },
                             padding: 15,
-                            usePointStyle: true,
+                            usePointStyle: false,
+                            boxWidth: 40,
+                            boxHeight: 2,
                             filter: function(legendItem, chartData) {
                                 // Hide datasets that have showInLegend: false
                                 const dataset = chartData.datasets[legendItem.datasetIndex];
                                 return dataset.showInLegend !== false;
+                            },
+                            generateLabels: function(chart) {
+                                const datasets = chart.data.datasets;
+                                return datasets.map((dataset, i) => {
+                                    // Skip datasets that should not be shown in legend
+                                    if (dataset.showInLegend === false) {
+                                        return null;
+                                    }
+
+                                    return {
+                                        text: dataset.label,
+                                        fillStyle: dataset.borderColor,
+                                        strokeStyle: dataset.borderColor,
+                                        lineWidth: dataset.borderWidth,
+                                        lineDash: dataset.borderDash || [],
+                                        hidden: false,
+                                        datasetIndex: i
+                                    };
+                                }).filter(item => item !== null);
                             }
                         }
                     }

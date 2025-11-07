@@ -615,59 +615,68 @@ function generateSpectrum() {
     // Debug: Log selected lines
     console.log('Selected lines:', selectedLines);
 
-    // Check for null intensities
-    const invalidLines = selectedLines.filter(line => parseIntensity(line.intensity) === null);
-    if (invalidLines.length > 0) {
-        const invalidMolecules = invalidLines.map(line => `${line.molecule} (${line.wavelength_nm}nm)`).join(', ');
-        alert(`Cannot generate spectrum: The following lines have null/invalid intensity values: ${invalidMolecules}. Please deselect these lines or choose different ones.`);
-        return;
-    }
-
     // Check if all selected lines belong to the same molecule
     const uniqueMolecules = [...new Set(selectedLines.map(line => line.molecule))];
     if (uniqueMolecules.length > 1) {
         alert('Warning: Relative intensity is only meaningful when comparing the same molecule.\n\nYou have selected lines from multiple molecules: ' + uniqueMolecules.join(', '));
     }
-    
+
     // Get peak width from user input
     const peakWidth = parseFloat(document.getElementById('peak-width').value) || 0.1;
     console.log('Using peak width:', peakWidth, 'nm');
-    
-    // Prepare discrete line data
-    const discreteLines = selectedLines.map(line => {
+
+    // Separate lines into those with valid intensity and those with null intensity
+    const validIntensityLines = [];
+    const nullIntensityLines = [];
+
+    selectedLines.forEach(line => {
         const intensity = parseIntensity(line.intensity);
-        console.log(`Processing line: ${line.molecule} at ${line.wavelength_nm}nm, intensity: ${line.intensity} -> ${intensity}`);
-        return {
-            x: line.wavelength_nm,
-            y: intensity,
-            molecule: line.molecule,
-            system: line.system || 'N/A'
-        };
-    }).sort((a, b) => a.x - b.x);
-    
-    console.log('Discrete lines prepared:', discreteLines);
-    
-    // Generate continuous spectrum
-    const continuousSpectrum = generateContinuousSpectrum(discreteLines, peakWidth);
+        if (intensity !== null) {
+            validIntensityLines.push({
+                x: line.wavelength_nm,
+                y: intensity,
+                molecule: line.molecule,
+                system: line.system || 'N/A'
+            });
+        } else {
+            nullIntensityLines.push({
+                x: line.wavelength_nm,
+                molecule: line.molecule,
+                system: line.system || 'N/A'
+            });
+        }
+    });
+
+    console.log('Valid intensity lines:', validIntensityLines.length);
+    console.log('Null intensity lines:', nullIntensityLines.length);
+
+    // Sort lines by wavelength
+    validIntensityLines.sort((a, b) => a.x - b.x);
+    nullIntensityLines.sort((a, b) => a.x - b.x);
+
+    // Generate continuous spectrum (only for valid intensity lines)
+    const continuousSpectrum = validIntensityLines.length > 0
+        ? generateContinuousSpectrum(validIntensityLines, peakWidth)
+        : [];
     console.log('Continuous spectrum generated with', continuousSpectrum.length, 'points');
-    
+
     // Debug: Show min/max values in continuous spectrum
     if (continuousSpectrum.length > 0) {
         const intensities = continuousSpectrum.map(p => p.y);
         const maxIntensity = Math.max(...intensities);
         const minIntensity = Math.min(...intensities);
         console.log('Continuous spectrum intensity range:', minIntensity, 'to', maxIntensity);
-        
+
         // Find peaks in continuous spectrum
         const peaks = continuousSpectrum.filter(p => p.y > maxIntensity * 0.1);
         console.log('Number of significant points (>10% max):', peaks.length);
     }
-    
+
     // Create the chart
     try {
-        createSpectrumChart(continuousSpectrum, discreteLines);
+        createSpectrumChart(continuousSpectrum, validIntensityLines, nullIntensityLines);
         console.log('Chart created successfully');
-        
+
         // Show download button
         document.getElementById('download-spectrum-btn').style.display = 'inline-block';
     } catch (error) {
@@ -747,10 +756,11 @@ function generateContinuousSpectrum(lines, peakWidth) {
 }
 
 // Function to create spectrum chart
-function createSpectrumChart(continuousData, discreteLines) {
+function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) {
     console.log('Creating spectrum chart with continuous data:', continuousData.length, 'points');
     console.log('Discrete lines:', discreteLines);
-    
+    console.log('Null intensity lines:', nullIntensityLines);
+
     // Wait for Chart.js to be available
     waitForChart(() => {
         const canvas = document.getElementById('spectrum-chart');
@@ -759,23 +769,23 @@ function createSpectrumChart(continuousData, discreteLines) {
             alert('Error: Chart canvas not found');
             return;
         }
-        
+
         const ctx = canvas.getContext('2d');
         console.log('Canvas context obtained:', ctx);
-        
+
         // Destroy existing chart
         if (spectrumChart) {
             console.log('Destroying existing chart');
             spectrumChart.destroy();
         }
-        
+
         // Ensure canvas has proper dimensions
         canvas.style.width = '100%';
         canvas.style.height = '400px';
-        
+
         // Prepare datasets
         const datasets = [];
-        
+
         // Add continuous spectrum first
         if (continuousData && continuousData.length > 0) {
             console.log('Adding continuous spectrum dataset with', continuousData.length, 'points');
@@ -798,11 +808,42 @@ function createSpectrumChart(continuousData, discreteLines) {
         } else {
             console.warn('No continuous data to display');
         }
-        
-        // Remove discrete line markers as requested by user
-        
+
+        // Add vertical dashed lines for null intensity lines
+        if (nullIntensityLines && nullIntensityLines.length > 0) {
+            console.log('Adding null intensity lines as vertical dashed lines');
+
+            // Calculate maximum intensity from continuous data for proper scaling
+            let maxIntensity = 10; // Default if no continuous data
+            if (continuousData && continuousData.length > 0) {
+                const intensities = continuousData.map(p => p.y);
+                maxIntensity = Math.max(...intensities);
+            }
+
+            nullIntensityLines.forEach(line => {
+                // Create a vertical line dataset for each null intensity line
+                // Line extends from 0 to slightly above the maximum intensity
+                datasets.push({
+                    label: `${line.molecule} - ${line.x.toFixed(2)} nm (no intensity)`,
+                    data: [
+                        { x: line.x, y: 0 },
+                        { x: line.x, y: maxIntensity * 1.1 }  // Extend to 110% of max
+                    ],
+                    borderColor: 'rgba(128, 128, 128, 0.7)',
+                    borderWidth: 2,
+                    borderDash: [5, 5],  // Dashed line pattern
+                    pointRadius: 0,
+                    showLine: true,
+                    fill: false,
+                    type: 'line',
+                    molecule: line.molecule,
+                    wavelength: line.x
+                });
+            });
+        }
+
         console.log('Final datasets:', datasets);
-        
+
         console.log('Creating new Chart.js instance');
         spectrumChart = new Chart(ctx, {
             type: 'scatter',
@@ -837,6 +878,11 @@ function createSpectrumChart(continuousData, discreteLines) {
                                 return ''; // Remove default title
                             },
                             label: function(context) {
+                                const dataset = context.dataset;
+                                // Check if this is a null intensity line
+                                if (dataset.molecule && dataset.wavelength) {
+                                    return `${dataset.molecule} at ${dataset.wavelength.toFixed(2)} nm (no intensity data)`;
+                                }
                                 const x = context.parsed.x.toFixed(2);
                                 const y = context.parsed.y.toFixed(4);
                                 return `Wavelength: ${x} nm, Intensity: ${y}`;
@@ -879,6 +925,11 @@ function createSpectrumChart(continuousData, discreteLines) {
                 }
             }
         });
+
+        // After chart is created, update the y-axis range for null intensity lines
+        if (nullIntensityLines && nullIntensityLines.length > 0 && spectrumChart) {
+            spectrumChart.update();
+        }
     });
 }
 

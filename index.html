@@ -2,7 +2,8 @@
 title: "Molecular Emission Line Tool (MELT)"
 permalink: /
 author_profile: false
-description: "Interactive molecular emission lines database with spectroscopic lines from Pearse & Gaydon compilation. Search by wavelength, frequency, and periodic table element filtering."
+description: "Interactive molecular emission lines database with spectroscopic lines from Pearse & Gaydon compilation.
+Search by wavelength, frequency, and periodic table element filtering."
 ---
 
 <script type="application/ld+json">
@@ -37,440 +38,521 @@ description: "Interactive molecular emission lines database with spectroscopic l
 </script>
 
 <style>
-/* Override theme to use full width only on this page */
-.molecular-lines-page .page {
-    width: 100% !important;
-    padding-right: 0 !important;
-}
-
-.molecular-lines-page .page__inner-wrap {
-    max-width: none !important;
-    margin-right: 0 !important;
-}
-
-.search-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.search-params {
-    background: var(--global-bg-color-alt, #f5f5f5);
-    padding: 10px 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    align-items: end;
-    border: 1px solid var(--global-border-color, #ddd);
-}
-
-.param-group {
-    margin-bottom: 0;
-}
-
-.param-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: var(--global-text-color, #333);
-}
-
-.param-group input[type="number"], .param-group input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid var(--global-border-color, #ccc);
-    border-radius: 4px;
-    box-sizing: border-box;
-    background: var(--global-bg-color, #fff);
-    color: var(--global-text-color, #333);
-}
-
-.param-group input[type="number"]:focus, .param-group input[type="text"]:focus {
-    outline: 2px solid var(--link-color, #2196F3);
-    border-color: var(--link-color, #2196F3);
-}
-
-.range-inputs {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-.range-inputs input {
-    flex: 1;
-}
-
-.range-inputs span {
-    font-size: 12px;
-    color: var(--muted-text-color, #666);
-}
-
-.periodic-table {
-    display: grid;
-    grid-template-columns: repeat(18, 1fr);
-    gap: 2px;
-    max-width: 900px;
-    margin: 20px auto;
-    font-size: 12px;
-}
-
-.element {
-    width: 45px;
-    height: 45px;
-    border: 1px solid var(--global-border-color, #ccc);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background: var(--global-bg-color-alt, #f9f9f9);
-    color: var(--global-text-color, #333);
-    border-radius: 4px;
-    transition: all 0.2s;
-    user-select: none;
-}
-
-.element:hover {
-    background: var(--sidebar-bg-color, #e0e0e0);
-    transform: scale(1.05);
-}
-
-.element.included {
-    background: #4CAF50 !important;
-    color: white !important;
-    border-color: #45a049;
-}
-
-.element.excluded {
-    background: #f44336 !important;
-    color: white !important;
-    border-color: #da190b;
-}
-
-.element .symbol {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.element .number {
-    font-size: 10px;
-}
-
-.empty-cell {
-    width: 45px;
-    height: 45px;
-}
-
-.element.deuterium {
-    width: 22px;
-    height: 22px;
-    font-size: 10px;
-    margin: 11px;
-}
-
-.element.deuterium .symbol {
-    font-size: 10px;
-}
-
-.element.deuterium .number {
-    font-size: 8px;
-}
-
-.legend {
-    text-align: center;
-    margin: 20px 0;
-    color: var(--global-text-color, #333);
-}
-
-.legend-item {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-.legend-color {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    border-radius: 3px;
-    vertical-align: middle;
-}
-
-.search-button {
-    background: var(--link-color, #2196F3);
-    color: white;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 20px 0;
-    transition: background-color 0.2s;
-}
-
-.search-button:hover {
-    background: var(--link-color-hover, #1976D2);
-}
-
-.results-section {
-    padding: 20px;
-    background: var(--global-bg-color-alt, #f9f9f9);
-    border: 1px solid var(--global-border-color, #ddd);
-    border-radius: 8px;
-    margin-top: 20px;
-    color: var(--global-text-color, #333);
-}
-
-/* Dark mode specific styles */
-[data-theme="dark"] .search-params {
-    background: var(--global-bg-color-alt, #2a2a2a);
-    border-color: var(--global-border-color, #555);
-}
-
-[data-theme="dark"] .element {
-    background: var(--global-bg-color-alt, #2a2a2a);
-    color: var(--global-text-color, #e0e0e0);
-    border-color: var(--global-border-color, #555);
-}
-
-[data-theme="dark"] .element:hover {
-    background: var(--sidebar-bg-color, #3a3a3a);
-}
-
-[data-theme="dark"] .results-section {
-    background: var(--global-bg-color-alt, #2a2a2a);
-    border-color: var(--global-border-color, #555);
-}
-
-[data-theme="dark"] .legend-color[style*="background: #f9f9f9"] {
-    background: #2a2a2a !important;
-    border: 1px solid #555 !important;
-}
-
-/* Ensure results table is readable in dark mode */
-[data-theme="dark"] #search-results table {
-    background: var(--global-bg-color, #1a1a1a);
-    color: var(--global-text-color, #e0e0e0);
-}
-
-[data-theme="dark"] #search-results table th {
-    background: var(--global-bg-color-alt, #2a2a2a) !important;
-    color: var(--global-text-color, #e0e0e0);
-    border-color: var(--global-border-color, #555) !important;
-}
-
-[data-theme="dark"] #search-results table td {
-    border-color: var(--global-border-color, #555) !important;
-}
-
-/* Bigger font size for search results */
-#search-results table {
-    font-size: 14px;
-}
-
-#search-results table th {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#search-results table td {
-    font-size: 14px;
-}
-
-/* About box styling */
-.title-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.about-button {
-    background: var(--link-color, #2196F3);
-    color: white;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.about-button:hover {
-    background: var(--link-color-hover, #1976D2);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-
-.about-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-    background: var(--global-bg-color-alt, #f9f9f9);
-    border: 1px solid var(--global-border-color, #ddd);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    opacity: 0;
-}
-
-.about-content.expanded {
-    max-height: 800px;
-    padding: 20px;
-    opacity: 1;
-    margin-top: 20px;
-    overflow-y: auto;
-}
-
-.about-content h3 {
-    margin-top: 0;
-    color: var(--global-text-color, #333);
-}
-
-.about-content p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    color: var(--global-text-color, #333);
-}
-
-.about-content a {
-    color: var(--link-color, #2196F3);
-    text-decoration: none;
-}
-
-.about-content a:hover {
-    text-decoration: underline;
-}
-
-/* Dark mode styles for about box */
-[data-theme="dark"] .about-content {
-    background: var(--global-bg-color-alt, #2a2a2a);
-    border-color: var(--global-border-color, #555);
-}
-
-[data-theme="dark"] .about-content h3 {
-    color: var(--global-text-color, #e0e0e0);
-}
-
-[data-theme="dark"] .about-content p {
-    color: var(--global-text-color, #e0e0e0);
-}
-
-/* Download buttons styling */
-.download-buttons button:hover {
-    opacity: 0.8;
-    transform: translateY(-1px);
-    transition: all 0.2s;
-}
-
-/* Responsive design for download buttons */
-@media (max-width: 768px) {
-    .download-buttons {
-        flex-direction: column !important;
-        gap: 5px !important;
+    /* Override theme to use full width only on this page */
+    .molecular-lines-page .page {
+        width: 100% !important;
+        padding-right: 0 !important;
     }
-    
-    .download-buttons button {
-        font-size: 12px !important;
-        padding: 6px 12px !important;
+
+    .molecular-lines-page .page__inner-wrap {
+        max-width: none !important;
+        margin-right: 0 !important;
     }
-}
 
-/* Spectrum section styling */
-.spectrum-section {
-    max-width: 1400px;
-    margin: 20px auto 0;
-    padding: 20px;
-    background: var(--global-bg-color-alt, #f9f9f9);
-    border: 1px solid var(--global-border-color, #ddd);
-    border-radius: 8px;
-    color: var(--global-text-color, #333);
-}
-
-.spectrum-controls button:hover {
-    opacity: 0.8;
-    transform: translateY(-1px);
-    transition: all 0.2s;
-}
-
-/* Dark mode styles for spectrum section */
-[data-theme="dark"] .spectrum-section {
-    background: var(--global-bg-color-alt, #2a2a2a);
-    border-color: var(--global-border-color, #555);
-}
-
-[data-theme="dark"] #selected-lines-info {
-    background: var(--global-bg-color-alt, #2a2a2a) !important;
-    border-color: var(--global-border-color, #555) !important;
-    color: var(--global-text-color, #e0e0e0);
-}
-
-[data-theme="dark"] .spectrum-plot {
-    background: var(--global-bg-color, #1a1a1a) !important;
-    border-color: var(--global-border-color, #555) !important;
-}
-
-[data-theme="dark"] #peak-width {
-    background: var(--global-bg-color, #1a1a1a) !important;
-    color: var(--global-text-color, #e0e0e0) !important;
-    border-color: var(--global-border-color, #555) !important;
-}
-
-[data-theme="dark"] #unit-selector,
-[data-theme="dark"] #range-min,
-[data-theme="dark"] #range-max {
-    background: var(--global-bg-color, #1a1a1a) !important;
-    color: var(--global-text-color, #e0e0e0) !important;
-    border-color: var(--global-border-color, #555) !important;
-}
-
-/* Responsive design for spectrum section */
-@media (max-width: 768px) {
-    .spectrum-controls {
-        flex-direction: column !important;
-        gap: 10px !important;
+    .search-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
     }
-    
-    .spectrum-controls button {
-        font-size: 12px !important;
-        padding: 6px 12px !important;
-        margin-left: 0 !important;
+
+    .search-params {
+        background: var(--global-bg-color-alt, #f5f5f5);
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: end;
+        border: 1px solid var(--global-border-color, #ddd);
     }
-    
-    #spectrum-chart {
-        height: 300px !important;
+
+    .param-group {
+        margin-bottom: 0;
     }
-}
+
+    .param-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: var(--global-text-color, #333);
+    }
+
+    .param-group input[type="number"],
+    .param-group input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid var(--global-border-color, #ccc);
+        border-radius: 4px;
+        box-sizing: border-box;
+        background: var(--global-bg-color, #fff);
+        color: var(--global-text-color, #333);
+    }
+
+    .param-group input[type="number"]:focus,
+    .param-group input[type="text"]:focus {
+        outline: 2px solid var(--link-color, #2196F3);
+        border-color: var(--link-color, #2196F3);
+    }
+
+    .range-inputs {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .range-inputs input {
+        flex: 1;
+    }
+
+    .range-inputs span {
+        font-size: 12px;
+        color: var(--muted-text-color, #666);
+    }
+
+    .periodic-table {
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        gap: 2px;
+        max-width: 900px;
+        margin: 20px auto;
+        font-size: 12px;
+    }
+
+    .element {
+        width: 45px;
+        height: 45px;
+        border: 1px solid var(--global-border-color, #ccc);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: var(--global-bg-color-alt, #f9f9f9);
+        color: var(--global-text-color, #333);
+        border-radius: 4px;
+        transition: all 0.2s;
+        user-select: none;
+    }
+
+    .element:hover {
+        background: var(--sidebar-bg-color, #e0e0e0);
+        transform: scale(1.05);
+    }
+
+    .element.included {
+        background: #4CAF50 !important;
+        color: white !important;
+        border-color: #45a049;
+    }
+
+    .element.excluded {
+        background: #f44336 !important;
+        color: white !important;
+        border-color: #da190b;
+    }
+
+    .element .symbol {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .element .number {
+        font-size: 10px;
+    }
+
+    .empty-cell {
+        width: 45px;
+        height: 45px;
+    }
+
+    .element.deuterium {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+        margin: 11px;
+    }
+
+    .element.deuterium .symbol {
+        font-size: 10px;
+    }
+
+    .element.deuterium .number {
+        font-size: 8px;
+    }
+
+    .legend {
+        text-align: center;
+        margin: 20px 0;
+        color: var(--global-text-color, #333);
+    }
+
+    .legend-item {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .legend-color {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border-radius: 3px;
+        vertical-align: middle;
+    }
+
+    .search-button {
+        background: var(--link-color, #2196F3);
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 20px 0;
+        transition: background-color 0.2s;
+    }
+
+    .search-button:hover {
+        background: var(--link-color-hover, #1976D2);
+    }
+
+    .results-section {
+        padding: 20px;
+        background: var(--global-bg-color-alt, #f9f9f9);
+        border: 1px solid var(--global-border-color, #ddd);
+        border-radius: 8px;
+        margin-top: 20px;
+        color: var(--global-text-color, #333);
+    }
+
+    /* Dark mode specific styles */
+    [data-theme="dark"] .search-params {
+        background: var(--global-bg-color-alt, #2a2a2a);
+        border-color: var(--global-border-color, #555);
+    }
+
+    [data-theme="dark"] .element {
+        background: var(--global-bg-color-alt, #2a2a2a);
+        color: var(--global-text-color, #e0e0e0);
+        border-color: var(--global-border-color, #555);
+    }
+
+    [data-theme="dark"] .element:hover {
+        background: var(--sidebar-bg-color, #3a3a3a);
+    }
+
+    [data-theme="dark"] .results-section {
+        background: var(--global-bg-color-alt, #2a2a2a);
+        border-color: var(--global-border-color, #555);
+    }
+
+    [data-theme="dark"] .legend-color[style*="background: #f9f9f9"] {
+        background: #2a2a2a !important;
+        border: 1px solid #555 !important;
+    }
+
+    /* Ensure results table is readable in dark mode */
+    [data-theme="dark"] #search-results table {
+        background: var(--global-bg-color, #1a1a1a);
+        color: var(--global-text-color, #e0e0e0);
+    }
+
+    [data-theme="dark"] #search-results table th {
+        background: var(--global-bg-color-alt, #2a2a2a) !important;
+        color: var(--global-text-color, #e0e0e0);
+        border-color: var(--global-border-color, #555) !important;
+    }
+
+    [data-theme="dark"] #search-results table td {
+        border-color: var(--global-border-color, #555) !important;
+    }
+
+    /* Bigger font size for search results */
+    #search-results table {
+        font-size: 14px;
+    }
+
+    #search-results table th {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #search-results table td {
+        font-size: 14px;
+    }
+
+    /* About box styling */
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .about-button {
+        background: var(--link-color, #2196F3);
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .about-button:hover {
+        background: var(--link-color-hover, #1976D2);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        background: var(--global-bg-color-alt, #f9f9f9);
+        border: 1px solid var(--global-border-color, #ddd);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        opacity: 0;
+    }
+
+    .about-content.expanded {
+        max-height: 800px;
+        padding: 20px;
+        opacity: 1;
+        margin-top: 20px;
+        overflow-y: auto;
+    }
+
+    .about-content h3 {
+        margin-top: 0;
+        color: var(--global-text-color, #333);
+    }
+
+    .about-content p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+        color: var(--global-text-color, #333);
+    }
+
+    .about-content a {
+        color: var(--link-color, #2196F3);
+        text-decoration: none;
+    }
+
+    .about-content a:hover {
+        text-decoration: underline;
+    }
+
+    /* Dark mode styles for about box */
+    [data-theme="dark"] .about-content {
+        background: var(--global-bg-color-alt, #2a2a2a);
+        border-color: var(--global-border-color, #555);
+    }
+
+    [data-theme="dark"] .about-content h3 {
+        color: var(--global-text-color, #e0e0e0);
+    }
+
+    [data-theme="dark"] .about-content p {
+        color: var(--global-text-color, #e0e0e0);
+    }
+
+    /* Download buttons styling */
+    .download-buttons button:hover {
+        opacity: 0.8;
+        transform: translateY(-1px);
+        transition: all 0.2s;
+    }
+
+    /* Responsive design for download buttons */
+    @media (max-width: 768px) {
+        .download-buttons {
+            flex-direction: column !important;
+            gap: 5px !important;
+        }
+
+        .download-buttons button {
+            font-size: 12px !important;
+            padding: 6px 12px !important;
+        }
+    }
+
+    /* Spectrum section styling */
+    .spectrum-section {
+        max-width: 1400px;
+        margin: 20px auto 0;
+        padding: 20px;
+        background: var(--global-bg-color-alt, #f9f9f9);
+        border: 1px solid var(--global-border-color, #ddd);
+        border-radius: 8px;
+        color: var(--global-text-color, #333);
+    }
+
+    .spectrum-controls button:hover {
+        opacity: 0.8;
+        transform: translateY(-1px);
+        transition: all 0.2s;
+    }
+
+    /* Dark mode styles for spectrum section */
+    [data-theme="dark"] .spectrum-section {
+        background: var(--global-bg-color-alt, #2a2a2a);
+        border-color: var(--global-border-color, #555);
+    }
+
+    [data-theme="dark"] #selected-lines-info {
+        background: var(--global-bg-color-alt, #2a2a2a) !important;
+        border-color: var(--global-border-color, #555) !important;
+        color: var(--global-text-color, #e0e0e0);
+    }
+
+    [data-theme="dark"] .spectrum-plot {
+        background: var(--global-bg-color, #1a1a1a) !important;
+        border-color: var(--global-border-color, #555) !important;
+    }
+
+    [data-theme="dark"] #peak-width {
+        background: var(--global-bg-color, #1a1a1a) !important;
+        color: var(--global-text-color, #e0e0e0) !important;
+        border-color: var(--global-border-color, #555) !important;
+    }
+
+    [data-theme="dark"] #unit-selector,
+    [data-theme="dark"] #range-min,
+    [data-theme="dark"] #range-max {
+        background: var(--global-bg-color, #1a1a1a) !important;
+        color: var(--global-text-color, #e0e0e0) !important;
+        border-color: var(--global-border-color, #555) !important;
+    }
+
+    /* Responsive design for spectrum section */
+    @media (max-width: 768px) {
+        .spectrum-controls {
+            flex-direction: column !important;
+            gap: 10px !important;
+        }
+
+        .spectrum-controls button {
+            font-size: 12px !important;
+            padding: 6px 12px !important;
+            margin-left: 0 !important;
+        }
+
+        #spectrum-chart {
+            height: 300px !important;
+        }
+    }
+
+    /* Scroll Indicator */
+    .scroll-indicator {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        animation: bounce 2s infinite;
+        color: var(--global-text-color, #333);
+        text-align: center;
+    }
+
+    .scroll-indicator.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .scroll-arrow {
+        width: 24px;
+        height: 24px;
+        border-right: 4px solid var(--link-color, #2196F3);
+        border-bottom: 4px solid var(--link-color, #2196F3);
+        transform: rotate(45deg);
+        margin: 0 auto;
+    }
+
+    .scroll-text {
+        font-size: 12px;
+        margin-top: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        40% {
+            transform: translateX(-50%) translateY(-10px);
+        }
+
+        60% {
+            transform: translateX(-50%) translateY(-5px);
+        }
+    }
+
+    [data-theme="dark"] .scroll-indicator {
+        color: var(--global-text-color, #e0e0e0);
+    }
 </style>
 
 <div class="search-container molecular-lines-container">
     <div class="title-container">
         <button class="about-button" onclick="toggleAbout()">About</button>
     </div>
-    
+
     <div class="about-content" id="about-content">
         <h3>About This Tool</h3>
-        <p><strong>Original Source:</strong> This tool is based on the comprehensive molecular spectroscopy data from <em>"The Identification of Molecular Spectra"</em> by <strong>Pearse, R. W. B., & Gaydon, A. G. (1976)</strong>, published by Chapman and Hall.</p>
-        
-        <p><strong>Open Source:</strong> This is an open-source web tool designed to make molecular line identification more efficient than manually examining the original book. You can <a href="https://github.com/Copland-yz/molecular-emission-lines" target="_blank">visit our GitHub repository</a> to download everything or contribute to the project. I am still working on proofreading of the database (there is a lot of work), so a contribution is very welcome!</p>
-        
-        <p><strong>Purpose:</strong> This tool allows astronomers and laboratory spectroscopists to quickly filter and identify <strong>molecular</strong> emission lines. Users can filter elements and wavelength (frequency) range. For <strong>atomic</strong> emission lines, there is already a fantastic database <a href="https://physics.nist.gov/PhysRefData/ASD/lines_form.html" target="_blank">the NIST Atomic Spectra Database</a>, and a visualization platform <a href="https://physics.nist.gov/PhysRefData/ASD/LIBS/libs-form.html" target="_blank">the NIST LIBS Database</a></p>
-        
-        <p><strong>New Feature - Spectrum Visualization:</strong> You can now select multiple emission lines and generate an interactive example spectrum! </p>
-        
-        <p><strong>How to use:</strong> Enter the range of the line (or line group) you observed (a very small range is preferred), and choose the possible elements, click "Search Emission Lines". To generate a spectrum, check the boxes next to desired lines and click "Generate Spectrum". Adjust the peak width to simulate different instrumental resolutions. Please note that the intensity is relative, it is only comparable within the same system of a molecule/ion.</p>
+        <p><strong>Original Source:</strong> This tool is based on the comprehensive molecular spectroscopy data from
+            <em>"The Identification of Molecular Spectra"</em> by <strong>Pearse, R. W. B., & Gaydon, A. G.
+                (1976)</strong>, published by Chapman and Hall.
+        </p>
+
+        <p><strong>Open Source:</strong> This is an open-source web tool designed to make molecular line identification
+            more efficient than manually examining the original book. You can <a
+                href="https://github.com/Copland-yz/molecular-emission-lines" target="_blank">visit our GitHub
+                repository</a> to download everything or contribute to the project. I am still working on proofreading
+            of the database (there is a lot of work), so a contribution is very welcome!</p>
+
+        <p><strong>Purpose:</strong> This tool allows astronomers and laboratory spectroscopists to quickly filter and
+            identify <strong>molecular</strong> emission lines. Users can filter elements and wavelength (frequency)
+            range. For <strong>atomic</strong> emission lines, there is already a fantastic database <a
+                href="https://physics.nist.gov/PhysRefData/ASD/lines_form.html" target="_blank">the NIST Atomic Spectra
+                Database</a>, and a visualization platform <a
+                href="https://physics.nist.gov/PhysRefData/ASD/LIBS/libs-form.html" target="_blank">the NIST LIBS
+                Database</a></p>
+
+        <p><strong>New Feature - Spectrum Visualization:</strong> You can now select multiple emission lines and
+            generate an interactive example spectrum! </p>
+
+        <p><strong>How to use:</strong> Enter the range of the line (or line group) you observed (a very small range is
+            preferred), and choose the possible elements, click "Search Emission Lines". To generate a spectrum, check
+            the boxes next to desired lines and click "Generate Spectrum". Adjust the peak width to simulate different
+            instrumental resolutions. Please note that the intensity is relative, it is only comparable within the same
+            system of a molecule/ion.</p>
     </div>
-    
+
     <div class="search-params">
         <div class="param-group">
             <label for="unit-selector">Unit</label>
-            <select id="unit-selector" style="width: 200px; padding: 5px; border: 1px solid var(--global-border-color, #ccc); border-radius: 4px; background: var(--global-bg-color, #fff); color: var(--global-text-color, #333); margin-bottom: 8px;">
+            <select id="unit-selector"
+                style="width: 200px; padding: 5px; border: 1px solid var(--global-border-color, #ccc); border-radius: 4px; background: var(--global-bg-color, #fff); color: var(--global-text-color, #333); margin-bottom: 8px;">
                 <option value="angstrom">Ångström (Å)</option>
                 <option value="nm" selected>Nanometer (nm)</option>
                 <option value="micrometer">Micrometer (µm)</option>
@@ -478,7 +560,7 @@ description: "Interactive molecular emission lines database with spectroscopic l
                 <option value="wavenumber">Wavenumber (cm⁻¹)</option>
             </select>
         </div>
-        
+
         <div class="param-group">
             <label for="range-min">Wavelength/Wavenumber/Frequency Range</label>
             <div class="range-inputs">
@@ -487,12 +569,13 @@ description: "Interactive molecular emission lines database with spectroscopic l
                 <input type="number" id="range-max" placeholder="Max" step="0.001">
             </div>
         </div>
-        
+
     </div>
-    
+
     <h3>Select Elements</h3>
-    <p>Click once to <strong>include</strong> an element, click twice to <strong>exclude</strong> it, click again to reset.</p>
-    
+    <p>Click once to <strong>include</strong> an element, click twice to <strong>exclude</strong> it, click again to
+        reset.</p>
+
     <div class="legend">
         <div class="legend-item">
             <span class="legend-color" style="background: #f9f9f9; border: 1px solid #ccc;"></span>
@@ -507,46 +590,77 @@ description: "Interactive molecular emission lines database with spectroscopic l
             Excluded
         </div>
     </div>
-    
+
     <div class="periodic-table" id="periodic-table">
         <!-- Periodic table will be generated by JavaScript -->
     </div>
-    
+
     <div style="text-align: center;">
         <button class="search-button" onclick="performSearch()">Search Emission Lines</button>
         <button class="search-button" style="background: #9E9E9E;" onclick="resetElements()">Reset Elements</button>
-        <button class="search-button" style="background: #FF9800;" onclick="clearSearchResults()">Clear Search Results</button>
+        <button class="search-button" style="background: #FF9800;" onclick="clearSearchResults()">Clear Search
+            Results</button>
     </div>
-    
+
     <div class="results-section">
         <h3>Search Results</h3>
         <div id="search-results">
             <p>Enter search parameters and click "Search Emission Lines" to find molecular emission lines.</p>
         </div>
     </div>
-    
+
     <div class="spectrum-section" id="spectrum-section">
         <h3>Generated Spectrum</h3>
-        <div class="spectrum-controls" style="margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
+        <div class="spectrum-controls"
+            style="margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 15px; align-items: center;">
             <div style="display: flex; gap: 10px;">
-                <button onclick="generateSpectrum()" style="background: #FF5722; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold;">Generate Spectrum</button>
-                <button onclick="downloadSpectrum()" id="download-spectrum-btn" style="background: #9C27B0; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; display: none;">Download Spectrum</button>
-                <button onclick="clearSelectedLines()" style="background: #757575; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold;">Clear Selection</button>
+                <button onclick="generateSpectrum()"
+                    style="background: #FF5722; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold;">Generate
+                    Spectrum</button>
+                <button onclick="downloadSpectrum()" id="download-spectrum-btn"
+                    style="background: #9C27B0; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; display: none;">Download
+                    Spectrum</button>
+                <button onclick="clearSelectedLines()"
+                    style="background: #757575; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold;">Clear
+                    Selection</button>
             </div>
             <div style="display: flex; align-items: center; gap: 10px;">
-                <label for="peak-width" style="font-weight: bold; color: var(--global-text-color, #333);">Peak Width:</label>
-                <input type="number" id="peak-width" value="0.1" step="0.1" min="0.1" max="5" style="width: 80px; padding: 4px; border: 1px solid var(--global-border-color, #ccc); border-radius: 4px; background: var(--global-bg-color, #fff); color: var(--global-text-color, #333);">
+                <label for="peak-width" style="font-weight: bold; color: var(--global-text-color, #333);">Peak
+                    Width:</label>
+                <input type="number" id="peak-width" value="0.1" step="0.1" min="0.1" max="5"
+                    style="width: 80px; padding: 4px; border: 1px solid var(--global-border-color, #ccc); border-radius: 4px; background: var(--global-bg-color, #fff); color: var(--global-text-color, #333);">
                 <span style="font-size: 12px; color: var(--muted-text-color, #666);">nm</span>
             </div>
         </div>
-        <div id="selected-lines-info" style="margin-bottom: 15px; padding: 10px; background: var(--global-bg-color-alt, #f9f9f9); border-radius: 5px; border: 1px solid var(--global-border-color, #ddd);">
+        <div id="selected-lines-info"
+            style="margin-bottom: 15px; padding: 10px; background: var(--global-bg-color-alt, #f9f9f9); border-radius: 5px; border: 1px solid var(--global-border-color, #ddd);">
             <p>Selected lines: <span id="selected-count">0</span></p>
         </div>
-        <div class="spectrum-plot" style="background: white; padding: 15px; border-radius: 5px; border: 1px solid var(--global-border-color, #ddd); height: 450px;">
+        <div class="spectrum-plot"
+            style="background: white; padding: 15px; border-radius: 5px; border: 1px solid var(--global-border-color, #ddd); height: 450px;">
             <canvas id="spectrum-chart" style="width: 100%; height: 400px;"></canvas>
         </div>
+    </div>
+
+    <div class="scroll-indicator" id="scroll-indicator"
+        onclick="window.scrollBy({top: window.innerHeight, behavior: 'smooth'})">
+        <div class="scroll-arrow"></div>
+        <div class="scroll-text">Scroll</div>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="{{ '/assets/js/molecular-lines.js' | relative_url }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollIndicator = document.getElementById('scroll-indicator');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 1000) {
+                scrollIndicator.classList.add('hidden');
+            } else {
+                scrollIndicator.classList.remove('hidden');
+            }
+        });
+    });
+</script>

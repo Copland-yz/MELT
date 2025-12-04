@@ -1,0 +1,13 @@
+[
+    {
+        "molecule": "CN",
+        "system": "VIOLET SYSTEM",
+        "wavelength_nm": 388.3,
+        "wavelength_angstrom": 3883,
+        "upper_level": "B’∑",
+        "lower_level": "X²∑",
+        "intensity": null,
+        "source": "Borucki et al (1985) ",
+        "page": 29
+    }
+]

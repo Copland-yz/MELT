@@ -112,13 +112,17 @@ async function loadMolecularDatabase() {
         // Get the base path for the site
         const basePath = document.querySelector('meta[name="base-path"]')?.getAttribute('content') || '';
 
-        // List of all JSON files to load
-        const pearsePaths = [];
-        for (let i = 29; i <= 377; i++) {
-            pearsePaths.push(`${basePath}/assets/data/Pearse&Gaydon/page_${String(i).padStart(3, '0')}.json`);
+        // Load the manifest file to get list of all data files
+        const manifestPath = `${basePath}/assets/data/data-manifest.json`;
+        const manifestResponse = await fetch(manifestPath);
+        if (!manifestResponse.ok) {
+            throw new Error('Failed to load data manifest');
         }
+        const manifest = await manifestResponse.json();
 
-        const allPaths = pearsePaths;
+        // Build full paths from manifest
+        const allPaths = manifest.files.map(file => `${basePath}/assets/data/${file}`);
+        console.log(`Loading ${allPaths.length} data files from manifest...`);
 
         // Load all files in parallel
         const promises = allPaths.map(async (path) => {

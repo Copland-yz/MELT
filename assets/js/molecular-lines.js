@@ -93,33 +93,33 @@ function parseElements(molecule) {
     const elements = [];
     const regex = /([A-Z][a-z]?)(\d*)/g;
     let match;
-    
+
     while ((match = regex.exec(molecule)) !== null) {
         elements.push(match[1]); // Add element symbol
     }
-    
+
     return [...new Set(elements)]; // Remove duplicates
 }
 
 // Function to load molecular database
 async function loadMolecularDatabase() {
     if (isDataLoaded) return;
-    
+
     const resultsDiv = document.getElementById('search-results');
     resultsDiv.innerHTML = '<p>Loading molecular line database...</p>';
-    
+
     try {
         // Get the base path for the site
         const basePath = document.querySelector('meta[name="base-path"]')?.getAttribute('content') || '';
-        
+
         // List of all JSON files to load
         const pearsePaths = [];
         for (let i = 29; i <= 377; i++) {
             pearsePaths.push(`${basePath}/assets/data/Pearse&Gaydon/page_${String(i).padStart(3, '0')}.json`);
         }
-        
+
         const allPaths = pearsePaths;
-        
+
         // Load all files in parallel
         const promises = allPaths.map(async (path) => {
             try {
@@ -138,19 +138,19 @@ async function loadMolecularDatabase() {
                 return [];
             }
         });
-        
+
         const results = await Promise.all(promises);
         molecularDatabase = results.flat();
         isDataLoaded = true;
-        
+
         // Debug: Show wavelength range in database
         const wavelengths = molecularDatabase.map(entry => entry.wavelength_nm).filter(w => w && !isNaN(w));
         const minWL = Math.min(...wavelengths);
         const maxWL = Math.max(...wavelengths);
         console.log(`Database loaded: ${molecularDatabase.length} lines, wavelength range: ${minWL.toFixed(1)} - ${maxWL.toFixed(1)} nm`);
-        
+
         resultsDiv.innerHTML = `<p>Database loaded successfully! ${molecularDatabase.length} molecular lines available.</p>`;
-        
+
     } catch (error) {
         console.error('Error loading database:', error);
         resultsDiv.innerHTML = '<p>Error loading molecular line database. Please try again.</p>';
@@ -163,7 +163,7 @@ function generatePeriodicTable() {
         return;
     }
     table.innerHTML = '';
-    
+
     layout.forEach(row => {
         row.forEach(atomicNumber => {
             if (atomicNumber === 0) {
@@ -174,7 +174,7 @@ function generatePeriodicTable() {
             } else {
                 // Element cell
                 let element, realAtomicNumber;
-                
+
                 if (atomicNumber === 119) {
                     // Special case for Deuterium
                     element = elements[elements.length - 1]; // Last element is D
@@ -183,18 +183,18 @@ function generatePeriodicTable() {
                     element = elements[atomicNumber - 1];
                     realAtomicNumber = atomicNumber;
                 }
-                
+
                 const elementDiv = document.createElement('div');
                 elementDiv.className = atomicNumber === 119 ? 'element deuterium' : 'element';
                 elementDiv.setAttribute('data-atomic-number', realAtomicNumber);
                 elementDiv.setAttribute('data-element-symbol', element[0]);
                 elementDiv.title = element[2]; // Element name
-                
+
                 elementDiv.innerHTML = `
                     <div class="number">${realAtomicNumber}</div>
                     <div class="symbol">${element[0]}</div>
                 `;
-                
+
                 elementDiv.onclick = () => toggleElement(element[0], elementDiv);
                 table.appendChild(elementDiv);
             }
@@ -205,9 +205,9 @@ function generatePeriodicTable() {
 function toggleElement(elementSymbol, elementDiv) {
     const currentState = elementStates[elementSymbol] || 0;
     const newState = (currentState + 1) % 3; // Cycle through 0, 1, 2
-    
+
     elementStates[elementSymbol] = newState;
-    
+
     // Update visual state
     elementDiv.classList.remove('included', 'excluded');
     if (newState === 1) {
@@ -221,6 +221,21 @@ function resetElements() {
     elementStates = {};
     document.querySelectorAll('.element').forEach(el => {
         el.classList.remove('included', 'excluded');
+    });
+}
+
+function excludeOtherElements() {
+    // Exclude all elements except those already included
+    document.querySelectorAll('.element').forEach(el => {
+        const symbol = el.querySelector('.symbol')?.textContent;
+        if (!symbol) return;
+
+        if (elementStates[symbol] !== 1) {
+            // Set to excluded state
+            elementStates[symbol] = 2;
+            el.classList.remove('included');
+            el.classList.add('excluded');
+        }
     });
 }
 
@@ -241,51 +256,51 @@ async function performSearch() {
     if (!isDataLoaded) {
         await loadMolecularDatabase();
     }
-    
+
     // Clear previous selections
     clearSelectedLines();
-    
+
     const rangeMin = parseFloat(document.getElementById('range-min').value) || null;
     const rangeMax = parseFloat(document.getElementById('range-max').value) || null;
     const selectedUnit = document.getElementById('unit-selector').value;
-    
+
     // Convert range values to wavelength nm for filtering
     let rangeMinNm = null, rangeMaxNm = null;
-    
+
     if (rangeMin !== null || rangeMax !== null) {
         // For frequency and wavenumber, higher values = shorter wavelengths
         // So we need to flip min/max when converting
         const needsFlip = (selectedUnit === 'ghz' || selectedUnit === 'wavenumber');
-        
+
         if (rangeMin !== null) {
             const convertedMin = convertToWavelengthNm(rangeMin, selectedUnit);
             console.log(`Converting ${rangeMin} ${selectedUnit} to ${convertedMin} nm`);
-            
+
             if (needsFlip) {
                 rangeMaxNm = convertedMin; // Higher frequency/wavenumber = lower wavelength (becomes max constraint)
             } else {
                 rangeMinNm = convertedMin;
             }
         }
-        
+
         if (rangeMax !== null) {
             const convertedMax = convertToWavelengthNm(rangeMax, selectedUnit);
             console.log(`Converting ${rangeMax} ${selectedUnit} to ${convertedMax} nm`);
-            
+
             if (needsFlip) {
                 rangeMinNm = convertedMax; // Lower frequency/wavenumber = higher wavelength (becomes min constraint)
             } else {
                 rangeMaxNm = convertedMax;
             }
         }
-        
+
         console.log(`Final wavelength range for filtering: ${rangeMinNm?.toFixed(1)} - ${rangeMaxNm?.toFixed(1)} nm`);
     }
-    
+
     // Always show both wavelength (nm) and the selected unit columns
     const showWavelength = true; // Always show nm for reference
     const showSelectedUnit = rangeMin !== null || rangeMax !== null; // Show selected unit if filtering
-    
+
     // Get selected elements
     const includedElements = [];
     const excludedElements = [];
@@ -305,33 +320,33 @@ async function performSearch() {
             const hasAllIncluded = includedElements.every(el => entry.elements.includes(el));
             if (!hasAllIncluded) return false;
         }
-        
+
         if (excludedElements.length > 0) {
             const hasAnyExcluded = excludedElements.some(el => entry.elements.includes(el));
             if (hasAnyExcluded) return false;
         }
-        
+
         // Range filtering (converted to nm for comparison)
         if (rangeMinNm !== null && entry.wavelength_nm < rangeMinNm) return false;
         if (rangeMaxNm !== null && entry.wavelength_nm > rangeMaxNm) return false;
-        
-        
+
+
         return true;
     });
-    
+
     // Sort by wavelength
     filteredResults.sort((a, b) => a.wavelength_nm - b.wavelength_nm);
-    
+
     // Store current search results for downloading
     currentSearchResults = filteredResults;
-    
+
     // Limit results to prevent performance issues
     const maxResults = 1000;
     const displayResults = filteredResults.slice(0, maxResults);
-    
+
     // Display results
     const resultsDiv = document.getElementById('search-results');
-    
+
     if (displayResults.length === 0) {
         resultsDiv.innerHTML = `
             <h4>No Results Found</h4>
@@ -347,7 +362,7 @@ async function performSearch() {
         `;
         return;
     }
-    
+
     resultsDiv.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
             <h4>Search Results (${displayResults.length}${filteredResults.length > maxResults ? ` of ${filteredResults.length}` : ''} lines found)</h4>
@@ -368,20 +383,20 @@ async function performSearch() {
                         ${showSelectedUnit && selectedUnit !== 'nm' ? `<th style="padding: 8px; border: 1px solid #ddd; text-align: right;">${getUnitLabel(selectedUnit)}</th>` : ''}
                         <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">Intensity</th>
                         <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 18%;">System</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 12%;">Page</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 12%;">Reference</th>
                     </tr>
                 </thead>
                 <tbody>
                     ${displayResults.map((entry, index) => {
-                        const convertedValue = convertWavelength(entry.wavelength_nm, selectedUnit);
-                        const formatValue = (val, unit) => {
-                            if (unit === 'ghz') return val.toFixed(1);
-                            if (unit === 'angstrom') return val.toFixed(1);
-                            if (unit === 'wavenumber') return val.toFixed(0);
-                            return val.toFixed(2);
-                        };
-                        
-                        return `
+        const convertedValue = convertWavelength(entry.wavelength_nm, selectedUnit);
+        const formatValue = (val, unit) => {
+            if (unit === 'ghz') return val.toFixed(1);
+            if (unit === 'angstrom') return val.toFixed(1);
+            if (unit === 'wavenumber') return val.toFixed(0);
+            return val.toFixed(2);
+        };
+
+        return `
                         <tr>
                             <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">
                                 <input type="checkbox" class="line-checkbox" onchange="toggleLineSelection(${index}, this)" style="transform: scale(1.2);">
@@ -391,9 +406,9 @@ async function performSearch() {
                             ${showSelectedUnit && selectedUnit !== 'nm' ? `<td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${formatValue(convertedValue, selectedUnit)}</td>` : ''}
                             <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${entry.intensity}</td>
                             <td style="padding: 8px; border: 1px solid #ddd; word-wrap: break-word; white-space: normal; max-width: 120px;">${entry.system || 'N/A'}</td>
-                            <td style="padding: 8px; border: 1px solid #ddd; font-size: 13px;">${entry.page || 'N/A'}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; font-size: 13px;">${entry.source || 'N/A'}</td>
                         </tr>`;
-                    }).join('')}
+    }).join('')}
                 </tbody>
             </table>
         </div>
@@ -413,19 +428,19 @@ function downloadTXT() {
         alert('No search results to download. Please perform a search first.');
         return;
     }
-    
+
     let content = 'Molecular Emission Lines Search Results\n';
     content += '=====================================\n';
     content += `Total Results: ${currentSearchResults.length}\n`;
     content += `Generated: ${new Date().toISOString()}\n\n`;
-    
+
     content += 'Molecule\tWavelength (nm)\tFrequency (GHz)\tIntensity\tSystem\tPage\n';
     content += '--------\t---------------\t---------------\t---------\t------\t----\n';
-    
+
     currentSearchResults.forEach(entry => {
         content += `${entry.molecule}\t${entry.wavelength_nm.toFixed(2)}\t${entry.frequency_ghz ? entry.frequency_ghz.toFixed(1) : 'N/A'}\t${entry.intensity}\t${entry.system || 'N/A'}\t${entry.page || 'N/A'}\n`;
     });
-    
+
     const blob = new Blob([content], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -443,9 +458,9 @@ function downloadCSV() {
         alert('No search results to download. Please perform a search first.');
         return;
     }
-    
+
     let csvContent = 'Molecule,Wavelength (nm),Frequency (GHz),Intensity,System,Page\n';
-    
+
     currentSearchResults.forEach(entry => {
         const molecule = `"${entry.molecule}"`;
         const wavelength = entry.wavelength_nm.toFixed(2);
@@ -453,10 +468,10 @@ function downloadCSV() {
         const intensity = `"${entry.intensity}"`;
         const system = `"${entry.system || ''}"`;
         const page = `"${entry.page || ''}"`;
-        
+
         csvContent += `${molecule},${wavelength},${frequency},${intensity},${system},${page}\n`;
     });
-    
+
     const blob = new Blob([csvContent], { type: 'text/csv' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -557,7 +572,7 @@ function parseIntensity(intensityStr) {
     if (!intensityStr || intensityStr === 'N/A') {
         return null;
     }
-    
+
     // Convert to string and handle the case where it might not be a string
     let cleanStr;
     try {
@@ -566,18 +581,18 @@ function parseIntensity(intensityStr) {
         console.warn('Could not convert intensity to string:', intensityStr);
         return null;
     }
-    
+
     // Check for null string
     if (cleanStr.toLowerCase() === 'null' || cleanStr === '') {
         return null;
     }
-    
+
     // If it's a number, return it
     const num = parseFloat(cleanStr);
     if (!isNaN(num)) {
         return num;
     }
-    
+
     // Handle relative intensities (like "w", "m", "s", "vs")
     const intensityMap = {
         'w': 1,      // weak
@@ -592,12 +607,12 @@ function parseIntensity(intensityStr) {
         'vstrong': 8,
         'vvs': 10    // very very strong
     };
-    
+
     const lower = cleanStr.toLowerCase();
     if (intensityMap[lower] !== undefined) {
         return intensityMap[lower];
     }
-    
+
     // If we can't parse it, return null
     console.warn('Could not parse intensity:', intensityStr, 'type:', typeof intensityStr);
     return null;
@@ -709,49 +724,49 @@ function gaussian(x, center, amplitude, sigma) {
 // Function to generate continuous spectrum from discrete lines
 function generateContinuousSpectrum(lines, peakWidth) {
     if (lines.length === 0) return [];
-    
+
     console.log('Generating continuous spectrum for lines:', lines);
     console.log('Peak width:', peakWidth);
-    
+
     // Find wavelength range
     const wavelengths = lines.map(line => line.x);
     const minWave = Math.min(...wavelengths) - peakWidth * 3;
     const maxWave = Math.max(...wavelengths) + peakWidth * 3;
-    
+
     console.log('Wavelength range:', minWave, 'to', maxWave);
-    
+
     // Generate fine wavelength grid (0.01 nm resolution for high quality)
     const resolution = 0.01;
     const numPoints = Math.floor((maxWave - minWave) / resolution);
     const spectrumData = [];
-    
+
     // Convert peak width (FWHM) to sigma for Gaussian
     const sigma = peakWidth / (2 * Math.sqrt(2 * Math.log(2))); // FWHM to sigma conversion
-    
+
     console.log('Sigma for Gaussian:', sigma);
     console.log('Number of points to generate:', numPoints);
-    
+
     for (let i = 0; i <= numPoints; i++) {
         const wavelength = minWave + i * resolution;
         let intensity = 0;
-        
+
         // Sum contributions from all lines
         lines.forEach(line => {
             const contribution = gaussian(wavelength, line.x, line.y, sigma);
             intensity += contribution;
         });
-        
+
         spectrumData.push({ x: wavelength, y: intensity });
-        
+
         // Log some sample points
         if (i < 5 || i % 50 === 0) {
             console.log(`Point ${i}: wavelength=${wavelength.toFixed(2)}, intensity=${intensity.toFixed(4)}`);
         }
     }
-    
+
     console.log('Generated spectrum with', spectrumData.length, 'points');
     console.log('Sample spectrum data:', spectrumData.slice(0, 10));
-    
+
     return spectrumData;
 }
 
@@ -897,10 +912,10 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
                         borderWidth: 1,
                         displayColors: false,
                         callbacks: {
-                            title: function(context) {
+                            title: function (context) {
                                 return ''; // Remove default title
                             },
-                            label: function(context) {
+                            label: function (context) {
                                 const dataset = context.dataset;
                                 // Check if this is a null intensity line
                                 if (dataset.molecule && dataset.wavelength) {
@@ -923,12 +938,12 @@ function createSpectrumChart(continuousData, discreteLines, nullIntensityLines) 
                             usePointStyle: false,
                             boxWidth: 40,
                             boxHeight: 15,
-                            filter: function(legendItem, chartData) {
+                            filter: function (legendItem, chartData) {
                                 // Hide datasets that have showInLegend: false
                                 const dataset = chartData.datasets[legendItem.datasetIndex];
                                 return dataset.showInLegend !== false;
                             },
-                            generateLabels: function(chart) {
+                            generateLabels: function (chart) {
                                 const datasets = chart.data.datasets;
                                 return datasets.map((dataset, i) => {
                                     // Skip datasets that should not be shown in legend
@@ -996,7 +1011,7 @@ function downloadSpectrum() {
         alert('Please generate a spectrum first.');
         return;
     }
-    
+
     // Create a temporary link and download
     const canvas = document.getElementById('spectrum-chart');
     const url = canvas.toDataURL('image/png');
@@ -1009,11 +1024,11 @@ function downloadSpectrum() {
 }
 
 // Initialize the periodic table when the page loads
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Add class to body for CSS scoping
     document.body.classList.add('molecular-lines-page');
     generatePeriodicTable();
-    
+
     // Check if Chart.js is loaded
     if (typeof Chart === 'undefined') {
         console.error('Chart.js is not loaded!');

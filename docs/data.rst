@@ -16,7 +16,7 @@ Current Database
 
 Data Description
 -----------
-When a molecule is excited (e.g., by electron collision in a plasma), it will decay from a higher energy level (upper level) to a lower energy level (lower level) undergoing a downward transition and release a photon with a precise wavelength which depends on the energy difference between the two levels, E = E_upper - E_lower = h\u03BD = hc/λ. It is the spectral fingerprint of a molecule, since each molecular species (and its specific excited state) possesses a distinct pattern of emission lines. Owing to the coupling of electronic, vibrational, and rotational degrees of freedom, molecular transitions typically give rise not to isolated lines, but to band spectra—clusters of closely spaced lines resulting from simultaneous changes in vibrational and rotational quantum numbers during an electronic transition.
+When a molecule is excited (e.g., by electron collision in a plasma), it will decay from a higher energy level (upper level) to a lower energy level (lower level) undergoing a downward transition and release a photon with a precise wavelength which depends on the energy difference between the two levels, E = E_upper - E_lower = h\niu = hc/λ. It is the spectral fingerprint of a molecule, since each molecular species (and its specific excited state) possesses a distinct pattern of emission lines. Owing to the coupling of electronic, vibrational, and rotational degrees of freedom, molecular transitions typically give rise not to isolated lines, but to band spectra—clusters of closely spaced lines resulting from simultaneous changes in vibrational and rotational quantum numbers during an electronic transition.
 
 Each emission line includes:
 

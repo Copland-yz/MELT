@@ -79,4 +79,64 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
+ {
+        "molecule": "N₂",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 316.0,
+        "wavelength_angstrom": 3160,
+        "upper_level": "C³Π",
+        "lower_level": "B³Π",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 337.0,
+        "wavelength_angstrom": 3370,
+        "upper_level": "C³Π",
+        "lower_level": "B³Π",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 357.0,
+        "wavelength_angstrom": 3570,
+        "upper_level": "C³Π",
+        "lower_level": "B³Π",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 380.0,
+        "wavelength_angstrom": 3800,
+        "upper_level": "C³Π",
+        "lower_level": "B³Π",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 400.0,
+        "wavelength_angstrom": 4000,
+        "upper_level": "C³Π",
+        "lower_level": "B³Π",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 420.0,
+        "wavelength_angstrom": 4200,
+        "upper_level": "C³Π",
+        "lower_level": "B³Π",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
 ]

@@ -1,1 +1,23 @@
+[
+    {
+        "molecule": "NH",
+        "system": "3360 SYSTEM",
+        "wavelength_nm": 336.0,
+        "wavelength_angstrom": 3360,
+        "upper_level": "A³Π",
+        "lower_level": "X³Σ⁻",
+        "intensity": null,
+        "source": "Camacho et al. (2008) "
+    },
+    {
+        "molecule": "C₂",
+        "system": "MULLIKEN SYSTEM",
+        "wavelength_nm": 231.4,
+        "wavelength_angstrom": 2314,
+        "upper_level": "d¹Σ⁺ᵤ",
+        "lower_level": "x¹Σ⁺₈",
+        "intensity": null,
+        "source": "Camacho et al. (2008)  "
+    }
 
+]

@@ -519,13 +519,9 @@ Search by wavelength, frequency, and periodic table element filtering."
 
     <div class="about-content" id="about-content">
         <h3>About This Tool</h3>
-        <p><strong>Original Source:</strong> This tool is based on the comprehensive molecular spectroscopy data from
-            <em>"The Identification of Molecular Spectra"</em> by <strong>Pearse, R. W. B., & Gaydon, A. G.
-                (1976)</strong>, published by Chapman and Hall.
-        </p>
 
         <p><strong>Open Source:</strong> This is an open-source web tool designed to make molecular line identification
-            more efficient than manually examining the original book. You can <a
+            more efficient than searching the original publication. You can <a
                 href="https://github.com/Copland-yz/molecular-emission-lines" target="_blank">visit our GitHub
                 repository</a> to download everything or contribute to the project. I am still working on proofreading
             of the database (there is a lot of work), so a contribution is very welcome!</p>
@@ -546,6 +542,8 @@ Search by wavelength, frequency, and periodic table element filtering."
             the boxes next to desired lines and click "Generate Spectrum". Adjust the peak width to simulate different
             instrumental resolutions. Please note that the intensity is relative, it is only comparable within the same
             system of a molecule/ion.</p>
+        <p><strong>Cite this: </strong> If this tool is helpful in your research, please cite our work. <a 
+                href="https://melt.readthedocs.io/en/latest/citation.html" target="_blank">How to cite?</a></p>
     </div>
 
     <div class="search-params">
@@ -635,6 +633,10 @@ Search by wavelength, frequency, and periodic table element filtering."
         <div id="selected-lines-info"
             style="margin-bottom: 15px; padding: 10px; background: var(--global-bg-color-alt, #f9f9f9); border-radius: 5px; border: 1px solid var(--global-border-color, #ddd);">
             <p>Selected lines: <span id="selected-count">0</span></p>
+        </div>
+        <div id="intensity-warning" style="display: none; margin-bottom: 15px; padding: 10px; background: #fff3e0; border-radius: 5px; border: 2px solid #e65100; color: #e65100;">
+            <p style="margin: 0; font-weight: bold;"><span style="font-size: 16px;">&#9888;</span> Warning: Relative intensity is only meaningful when comparing the same molecule.</p>
+            <p style="margin: 5px 0 0 0;">You have selected lines from multiple molecules: <span id="warning-molecules"></span></p>
         </div>
         <div class="spectrum-plot"
             style="background: white; padding: 15px; border-radius: 5px; border: 1px solid var(--global-border-color, #ddd); height: 450px;">

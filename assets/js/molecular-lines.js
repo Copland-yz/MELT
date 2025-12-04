@@ -347,7 +347,7 @@ async function performSearch() {
     // Display results
     const resultsDiv = document.getElementById('search-results');
 
-    if (displayResults.length === 0) {
+    if (filteredResults.length === 0) {
         resultsDiv.innerHTML = `
             <h4>No Results Found</h4>
             <p>No molecular lines match your search criteria. Try adjusting your parameters.</p>
@@ -363,9 +363,29 @@ async function performSearch() {
         return;
     }
 
+    // Show warning if too many results
+    if (filteredResults.length > maxResults) {
+        resultsDiv.innerHTML = `
+            <div style="background: #ffebee; padding: 20px; border-radius: 5px; border: 2px solid #b71c1c; margin-top: 10px;">
+                <h4 style="color: #b71c1c; margin-top: 0;">More than ${maxResults} lines found (${filteredResults.length} total)</h4>
+                <p style="color: #b71c1c; font-weight: bold;">Please refine your search to see more specific results.</p>
+                <div style="margin-top: 15px;">
+                    <h5>Current Search Parameters:</h5>
+                    <ul>
+                        ${rangeMin || rangeMax ? `<li><strong>Range (${getUnitLabel(selectedUnit)}):</strong> ${rangeMin || '∞'} - ${rangeMax || '∞'}</li>` : '<li><em>No wavelength range specified</em></li>'}
+                        ${includedElements.length ? `<li><strong>Must include elements:</strong> ${includedElements.join(', ')}</li>` : ''}
+                        ${excludedElements.length ? `<li><strong>Must exclude elements:</strong> ${excludedElements.join(', ')}</li>` : ''}
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>Suggestions:</strong> Try narrowing the wavelength range or selecting specific elements to include/exclude.</p>
+                </div>
+            </div>
+        `;
+        return;
+    }
+
     resultsDiv.innerHTML = `
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-            <h4>Search Results (${displayResults.length}${filteredResults.length > maxResults ? ` of ${filteredResults.length}` : ''} lines found)</h4>
+            <h4>Search Results (${filteredResults.length} lines found)</h4>
             <div class="download-buttons" style="display: flex; gap: 10px;">
                 <button onclick="downloadTXT()" style="background: #4CAF50; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold;">Download TXT</button>
                 <button onclick="downloadCSV()" style="background: #2196F3; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold;">Download CSV</button>
@@ -412,7 +432,6 @@ async function performSearch() {
                 </tbody>
             </table>
         </div>
-        ${filteredResults.length > maxResults ? `<p><em>Showing first ${maxResults} results. Refine your search to see more specific results.</em></p>` : ''}
     `;
 }
 
@@ -558,6 +577,12 @@ function clearSelectedLines() {
     updateSelectedLinesDisplay();
     updateSelectAllCheckbox();
 
+    // Hide intensity warning
+    const warningDiv = document.getElementById('intensity-warning');
+    if (warningDiv) {
+        warningDiv.style.display = 'none';
+    }
+
     // Clear chart
     if (spectrumChart) {
         spectrumChart.destroy();
@@ -632,8 +657,14 @@ function generateSpectrum() {
 
     // Check if all selected lines belong to the same molecule
     const uniqueMolecules = [...new Set(selectedLines.map(line => line.molecule))];
+    const warningDiv = document.getElementById('intensity-warning');
+    const warningMolecules = document.getElementById('warning-molecules');
+
     if (uniqueMolecules.length > 1) {
-        alert('Warning: Relative intensity is only meaningful when comparing the same molecule.\n\nYou have selected lines from multiple molecules: ' + uniqueMolecules.join(', '));
+        warningMolecules.textContent = uniqueMolecules.join(', ');
+        warningDiv.style.display = 'block';
+    } else {
+        warningDiv.style.display = 'none';
     }
 
     // Get peak width from user input

@@ -150,12 +150,53 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- "molecule": "N₂⁺",
+{
+        "molecule": "N₂⁺",
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 428.0,
         "wavelength_angstrom": 4280,
         "upper_level": "B²Σ<sub>g</sub>⁺",
         "lower_level": "X²Σ<sub>g</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+{
+        "molecule": "CN",
+        "system": "  ",
+        "wavelength_nm": 422.0,
+        "wavelength_angstrom": 4220,
+        "upper_level": "B²Σ",
+        "lower_level": "X²Σ",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+{
+        "molecule": "CN",
+        "system": "VIOLET SYSTEM",
+        "wavelength_nm": 388.0,
+        "wavelength_angstrom": 3880,
+        "upper_level": "B²Σ",
+        "lower_level": "X²Σ",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+{
+        "molecule": "CN",
+        "system": "VIOLET SYSTEM",
+        "wavelength_nm": 422.0,
+        "wavelength_angstrom": 4220,
+        "upper_level": "B²Σ",
+        "lower_level": "X²Σ",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+{
+        "molecule": "CN",
+        "system": "VIOLET SYSTEM",
+        "wavelength_nm": 359.0,
+        "wavelength_angstrom": 3590,
+        "upper_level": "B²Σ",
+        "lower_level": "X²Σ",
         "intensity": null,
         "source": "Clay et al. (1996) "
     },

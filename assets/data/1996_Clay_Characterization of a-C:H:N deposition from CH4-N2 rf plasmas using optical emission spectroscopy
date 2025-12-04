@@ -139,4 +139,24 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
+
+{
+        "molecule": "N₂⁺",
+        "system": "SECOND POSITIVE SYSTEM",
+        "wavelength_nm": 391.0,
+        "wavelength_angstrom": 3910,
+        "upper_level": "B²Σ<sub>g</sub>⁺",
+        "lower_level": "X²Σ<sub>g</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ "molecule": "N₂⁺",
+        "system": "FIRST POSITIVE SYSTEM",
+        "wavelength_nm": 428.0,
+        "wavelength_angstrom": 4280,
+        "upper_level": "B²Σ<sub>g</sub>⁺",
+        "lower_level": "X²Σ<sub>g</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
 ]

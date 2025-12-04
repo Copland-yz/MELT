@@ -1,1 +1,82 @@
-
+[
+    {
+        "molecule": "CH",
+        "system": "3900 Å SYSTEM",
+        "wavelength_nm": 390.0,
+        "wavelength_angstrom": 3900,
+        "upper_level": "B’∑",
+        "lower_level": "X²∏",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+    {
+        "molecule": "CH",
+        "system": "4300 Å SYSTEM",
+        "wavelength_nm": 430.0,
+        "wavelength_angstrom": 4300,
+        "upper_level": "A²∆",
+        "lower_level": "X²∏",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "H₂",
+        "system": "  ",
+        "wavelength_nm": 463.0,
+        "wavelength_angstrom": 4630,
+        "upper_level": "G¹Σ<sub>g</sub>⁺",
+        "lower_level": "B¹Σ<sub>u</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "H₂",
+        "system": "",
+        "wavelength_nm": 602.0,
+        "wavelength_angstrom": 6020,
+        "upper_level": "3p³Π<sub>u</sub>",
+        "lower_level": "2s³Σ<sub>g</sub>"",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "FIRST POSITIVE SYSTEM",
+        "wavelength_nm": 540.0,
+        "wavelength_angstrom": 5400,
+        "upper_level": "B³Π<sub>g</sub>",
+        "lower_level": "A³Σ<sub>u</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "FIRST POSITIVE SYSTEM",
+        "wavelength_nm": 580.0,
+        "wavelength_angstrom": 5800,
+        "upper_level": "B³Π<sub>g</sub>",
+        "lower_level": "A³Σ<sub>u</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "FIRST POSITIVE SYSTEM",
+        "wavelength_nm": 650.0,
+        "wavelength_angstrom": 6500,
+        "upper_level": "B³Π<sub>g</sub>",
+        "lower_level": "A³Σ<sub>u</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+ {
+        "molecule": "N₂",
+        "system": "FIRST POSITIVE SYSTEM",
+        "wavelength_nm": 750.0,
+        "wavelength_angstrom": 7500,
+        "upper_level": "B³Π<sub>g</sub>",
+        "lower_level": "A³Σ<sub>u</sub>⁺",
+        "intensity": null,
+        "source": "Clay et al. (1996) "
+    },
+]

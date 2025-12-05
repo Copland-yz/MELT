@@ -254,22 +254,22 @@
     },
     {
         "molecule": "K₂",
-        "system": "FAR RED SYSTEM, 8850–7700 Å, A¹Σᵤ⁺–X¹Σ₉⁺",
+        "system": "FAR RED SYSTEM, 8850–7700 Å, A¹Σᵤ⁺–X¹Σ<sub>g</sub>⁺",
         "wavelength_nm": null,
         "wavelength_angstrom": "8840–7728",
         "upper_level": "A¹Σᵤ⁺",
-        "lower_level": "X¹Σ₉⁺",
+        "lower_level": "X¹Σ<sub>g</sub>⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.194",
         "page": 194
     },
     {
         "molecule": "K₂",
-        "system": "NEAR RED SYSTEM, 6950–6250 Å, B¹Πᵤ–X¹Σ₉⁺",
+        "system": "NEAR RED SYSTEM, 6950–6250 Å, B¹Πᵤ–X¹Σ<sub>g</sub>⁺",
         "wavelength_nm": null,
         "wavelength_angstrom": "6922–6280",
         "upper_level": "B¹Πᵤ",
-        "lower_level": "X¹Σ₉⁺",
+        "lower_level": "X¹Σ<sub>g</sub>⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.194",
         "page": 194

@@ -1,11 +1,11 @@
 [
     {
         "molecule": "Li₂",
-        "system": "ULTRA-VIOLET SYSTEM, λλ3100–2500, D¹Πᵤ–X¹Σ₉⁺",
+        "system": "ULTRA-VIOLET SYSTEM, λλ3100–2500, D¹Πᵤ–X¹Σ<sub>g</sub>⁺",
         "wavelength_nm": null,
         "wavelength_angstrom": "3100–2500",
         "upper_level": "D¹Πᵤ",
-        "lower_level": "X¹Σ₉⁺",
+        "lower_level": "X¹Σ<sub>g</sub>⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.202",
         "page": 202

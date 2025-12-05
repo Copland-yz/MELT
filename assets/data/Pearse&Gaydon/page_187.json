@@ -1,22 +1,22 @@
 [
     {
         "molecule": "I₂",
-        "system": "VISIBLE SYSTEM, B 0⁺ᵤ–X¹Σ⁺₉",
+        "system": "VISIBLE SYSTEM, B 0⁺ᵤ–X¹Σ⁺<sub>g</sub>",
         "wavelength_nm": null,
         "wavelength_angstrom": "8400–4990",
         "upper_level": "B 0⁺ᵤ",
-        "lower_level": "X¹Σ⁺₉",
+        "lower_level": "X¹Σ⁺<sub>g</sub>",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.187",
         "page": 187
     },
     {
         "molecule": "I₂",
-        "system": "INFRA-RED SYSTEM, 9300–8300 Å, A³Π₁ᵤ–X¹Σ⁺₉",
+        "system": "INFRA-RED SYSTEM, 9300–8300 Å, A³Π₁ᵤ–X¹Σ⁺<sub>g</sub>",
         "wavelength_nm": null,
         "wavelength_angstrom": "9300–8300",
         "upper_level": "A³Π₁ᵤ",
-        "lower_level": "X¹Σ⁺₉",
+        "lower_level": "X¹Σ⁺<sub>g</sub>",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.187",
         "page": 187

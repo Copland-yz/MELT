@@ -404,15 +404,16 @@ async function performSearch() {
             <table style="width: 100%; border-collapse: collapse;">
                 <thead>
                     <tr style="background: #f0f0f0; position: sticky; top: 0;">
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: center; width: 50px;">
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: center; width: 40px;">
                             <input type="checkbox" id="select-all-checkbox" onchange="selectAllLines(this)" style="transform: scale(1.2);" title="Select/Deselect All">
                         </th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Molecule</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right;">λ (nm)</th>
-                        ${showSelectedUnit && selectedUnit !== 'nm' ? `<th style="padding: 8px; border: 1px solid #ddd; text-align: right;">${getUnitLabel(selectedUnit)}</th>` : ''}
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: center;">Intensity</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 18%;">System</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 12%;">Reference</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 70px;">Molecule</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: right; width: 70px;">λ (nm)</th>
+                        ${showSelectedUnit && selectedUnit !== 'nm' ? `<th style="padding: 8px; border: 1px solid #ddd; text-align: right; width: 80px;">${getUnitLabel(selectedUnit)}</th>` : ''}
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: center; width: 60px;">Intensity</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">System</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Transition</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left; width: 120px;">Reference</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -424,6 +425,9 @@ async function performSearch() {
             if (unit === 'wavenumber') return val.toFixed(0);
             return val.toFixed(2);
         };
+        const transition = (entry.upper_level && entry.lower_level)
+            ? `${entry.upper_level} → ${entry.lower_level}`
+            : (entry.upper_level || entry.lower_level || 'N/A');
 
         return `
                         <tr>
@@ -434,7 +438,8 @@ async function performSearch() {
                             <td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${entry.wavelength_nm.toFixed(2)}</td>
                             ${showSelectedUnit && selectedUnit !== 'nm' ? `<td style="padding: 8px; border: 1px solid #ddd; text-align: right;">${formatValue(convertedValue, selectedUnit)}</td>` : ''}
                             <td style="padding: 8px; border: 1px solid #ddd; text-align: center;">${entry.intensity}</td>
-                            <td style="padding: 8px; border: 1px solid #ddd; word-wrap: break-word; white-space: normal; max-width: 120px;">${entry.system || 'N/A'}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; word-wrap: break-word; white-space: normal;">${entry.system || 'N/A'}</td>
+                            <td style="padding: 8px; border: 1px solid #ddd; word-wrap: break-word; white-space: normal;">${transition}</td>
                             <td style="padding: 8px; border: 1px solid #ddd; font-size: 13px;">${entry.source || 'N/A'}</td>
                         </tr>`;
     }).join('')}

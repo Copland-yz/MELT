@@ -319,6 +319,11 @@ async function performSearch() {
 
     // Filter the database
     let filteredResults = molecularDatabase.filter(entry => {
+        // Skip entries with invalid wavelength
+        if (entry.wavelength_nm === null || entry.wavelength_nm === undefined || isNaN(entry.wavelength_nm)) {
+            return false;
+        }
+
         // Element filtering
         if (includedElements.length > 0) {
             const hasAllIncluded = includedElements.every(el => entry.elements.includes(el));

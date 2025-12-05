@@ -35,7 +35,7 @@
         "wavelength_nm": 602.0,
         "wavelength_angstrom": 6020,
         "upper_level": "3p³Π<sub>u</sub>",
-        "lower_level": "2s³Σ<sub>g</sub>"",
+        "lower_level": "2s³Σ<sub>g</sub>",
         "intensity": null,
         "source": "Clay et al. (1996) "
     },

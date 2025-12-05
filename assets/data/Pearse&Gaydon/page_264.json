@@ -2,17 +2,6 @@
     {
         "molecule": "OH",
         "system": "3064 Å SYSTEM, A²Σ⁺–X²Π",
-        "wavelength_nm": null,
-        "wavelength_angstrom": null,
-        "upper_level": "A²Σ⁺",
-        "lower_level": "X²Π",
-        "intensity": 0,
-        "source": "Pearse & Gaydon (1976) p.264",
-        "page": 264
-    },
-    {
-        "molecule": "OH",
-        "system": "3064 Å SYSTEM, A²Σ⁺–X²Π",
         "wavelength_nm": 244.4,
         "wavelength_angstrom": 2444,
         "upper_level": "A²Σ⁺",

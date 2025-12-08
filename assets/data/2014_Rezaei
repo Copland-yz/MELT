@@ -1,0 +1,22 @@
+[
+    {
+        "molecule": "O₂⁺",
+        "system": "N/A",
+        "wavelength_nm": 559.1,
+        "wavelength_angstrom": 5591,
+        "upper_level": "b⁴Σg⁻",
+        "lower_level": "a⁴Πu",
+        "intensity": null,
+        "source": " Rezaei et al. (2014) "
+    },
+       {
+        "molecule": "O₂⁺",
+        "system": "N/A",
+        "wavelength_nm": 525.7,
+        "wavelength_angstrom": 5257,
+        "upper_level": "b⁴Σg⁻",
+        "lower_level": "a⁴Πu",
+        "intensity": null,
+        "source": " Rezaei et al. (2014) "
+    }
+]

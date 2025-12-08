@@ -9,7 +9,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO₂⁺",
         "system": "DUFFENDACK AND BARKER'S SYSTEM",
         "wavelength_nm": 351.1,
@@ -19,7 +19,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO₂⁺",
         "system": "DUFFENDACK AND BARKER'S SYSTEM",
         "wavelength_nm": 337.8,
@@ -29,7 +29,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO₂⁺",
         "system": "DUFFENDACK AND BARKER'S SYSTEM",
         "wavelength_nm": 287.4,
@@ -49,7 +49,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO₂⁺",
         "system": "Bands λλ 2896 and 2883",
         "wavelength_nm": 289.6-289.9,
@@ -59,7 +59,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "THE THIRD POSITIVE AND SB BANDS",
         "wavelength_nm": 297.7,
@@ -79,7 +79,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
- {
+     {
         "molecule": "CO",
         "system": "THE ANGSTRÃM SYSTEM",
         "wavelength_nm": 483.6,
@@ -89,7 +89,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "THE ANGSTRÃM SYSTEM",
         "wavelength_nm": 519.8,
@@ -99,7 +99,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "THE ANGSTRÃM SYSTEM",
         "wavelength_nm": 561.0,
@@ -109,7 +109,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "THE CAMERON BANDS",
         "wavelength_nm": 238.9,
@@ -119,7 +119,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "THE CAMERON BANDS",
         "wavelength_nm":249.0,
@@ -129,7 +129,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "FOURTH POSITIVE SYSTEM",
         "wavelength_nm":191.4,
@@ -139,7 +139,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "FOURTH POSITIVE SYSTEM",
         "wavelength_nm":192.7,
@@ -149,7 +149,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "FOURTH POSITIVE SYSTEM",
         "wavelength_nm":194.7,
@@ -159,7 +159,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "FOURTH POSITIVE SYSTEM",
         "wavelength_nm":200.6,
@@ -169,7 +169,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CO",
         "system": "FOURTH POSITIVE SYSTEM",
         "wavelength_nm":202.6,
@@ -179,7 +179,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-  {
+      {
         "molecule": "CH",
         "system": "4300Å SYSTEM",
         "wavelength_nm": 431.5,
@@ -189,7 +189,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CH",
         "system": "3900Å SYSTEM",
         "wavelength_nm": 387.1,
@@ -199,7 +199,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "CH",
         "system": "3143Å SYSTEM",
         "wavelength_nm": 314.5,
@@ -219,7 +219,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-   {
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 471.5,
@@ -229,7 +229,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-   {
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 469.7,
@@ -239,7 +239,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-   {
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 468.5,
@@ -249,8 +249,8 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-   {
-        "molecule": "C₂",
+    {
+       "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 467.4,
         "wavelength_angstrom": 4674,
@@ -269,7 +269,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 512.9,
@@ -279,7 +279,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 509.6,
@@ -289,7 +289,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 507.0,
@@ -299,7 +299,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 563.5,
@@ -309,7 +309,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 558.4,
@@ -319,7 +319,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 553.9,
@@ -329,7 +329,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm": 550.0,
@@ -339,7 +339,7 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-{
+    {
         "molecule": "C₂",
         "system": "SWAN SYSTEM",
         "wavelength_nm":546.8,

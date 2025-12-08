@@ -21,7 +21,7 @@
     },
  {
         "molecule": "H₂",
-        "system": "  ",
+        "system": "-",
         "wavelength_nm": 463.0,
         "wavelength_angstrom": 4630,
         "upper_level": "G¹Σ<sub>g</sub>⁺",
@@ -31,7 +31,7 @@
     },
  {
         "molecule": "H₂",
-        "system": "",
+        "system": "-",
         "wavelength_nm": 602.0,
         "wavelength_angstrom": 6020,
         "upper_level": "3p³Π<sub>u</sub>",

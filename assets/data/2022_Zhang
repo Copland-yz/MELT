@@ -179,40 +179,19 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-
-    {
-        "molecule": "C₂",
-        "system": "d³Πg → a³Πu, Δν = 1",
-        "wavelength_nm": 473.7,
-        "wavelength_angstrom": 4737,
-        "upper_level": "d³Πg",
-        "lower_level": "a³Πu",
-        "intensity": null,
-        "source": "Zhang et al. (2022)"
-    },
-    {
-        "molecule": "C₂",
-        "system": "d³Πg → a³Πu, Δν = 0",
-        "wavelength_nm": 516.5,
-        "wavelength_angstrom": 5165,
-        "upper_level": "d³Πg",
-        "lower_level": "a³Πu",
-        "intensity": null,
-        "source": "Zhang et al. (2022)"
-    },
-    {
+  {
         "molecule": "CH",
-        "system": "C²Σ → X²Π, Δν = 0",
-        "wavelength_nm": 314.5,
-        "wavelength_angstrom": 3145,
-        "upper_level": "C²Σ",
+        "system": "4300Å SYSTEM",
+        "wavelength_nm": 431.5,
+        "wavelength_angstrom": 4315,
+        "upper_level": "A²Δ",
         "lower_level": "X²Π",
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-    {
+{
         "molecule": "CH",
-        "system": "B²Σ → X²Π, Δν = 0",
+        "system": "3900Å SYSTEM",
         "wavelength_nm": 387.1,
         "wavelength_angstrom": 3871,
         "upper_level": "B²Σ",
@@ -220,14 +199,155 @@
         "intensity": null,
         "source": "Zhang et al. (2022)"
     },
-    {
+{
         "molecule": "CH",
-        "system": "A²Δ → X²Π, Δν = 0",
-        "wavelength_nm": 431.5,
-        "wavelength_angstrom": 4315,
-        "upper_level": "A²Δ",
+        "system": "3143Å SYSTEM",
+        "wavelength_nm": 314.5,
+        "wavelength_angstrom": 3145,
+        "upper_level": "C²Σ⁺",
         "lower_level": "X²Π",
         "intensity": null,
         "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 473.7,
+        "wavelength_angstrom": 4737,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+   {
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 471.5,
+        "wavelength_angstrom": 4715,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+   {
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 469.7,
+        "wavelength_angstrom": 4697,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+   {
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 468.5,
+        "wavelength_angstrom": 4685,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+   {
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 467.4,
+        "wavelength_angstrom": 4674,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 516.5,
+        "wavelength_angstrom": 5165,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 512.9,
+        "wavelength_angstrom": 5129,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 509.6,
+        "wavelength_angstrom": 5096,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 507.0,
+        "wavelength_angstrom": 5070,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 563.5,
+        "wavelength_angstrom": 5635,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 558.4,
+        "wavelength_angstrom":5584,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 553.9,
+        "wavelength_angstrom":5539,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm": 550.0,
+        "wavelength_angstrom":5500,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "C₂",
+        "system": "SWAN SYSTEM",
+        "wavelength_nm":546.8,
+        "wavelength_angstrom": 5468,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
     }
+
 ]

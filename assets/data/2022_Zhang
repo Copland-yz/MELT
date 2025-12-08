@@ -1,0 +1,233 @@
+[
+    {
+        "molecule": "CO₂⁺",
+        "system": "DUFFENDACK AND BARKER'S SYSTEM",
+        "wavelength_nm": 369.2,
+        "wavelength_angstrom": 3692,
+        "upper_level": "A²Π",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO₂⁺",
+        "system": "DUFFENDACK AND BARKER'S SYSTEM",
+        "wavelength_nm": 351.1,
+        "wavelength_angstrom": 3511,
+        "upper_level": "A²Π",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO₂⁺",
+        "system": "DUFFENDACK AND BARKER'S SYSTEM",
+        "wavelength_nm": 337.8,
+        "wavelength_angstrom": 3378,
+        "upper_level": "A²Π",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO₂⁺",
+        "system": "DUFFENDACK AND BARKER'S SYSTEM",
+        "wavelength_nm": 287.4,
+        "wavelength_angstrom": 2874,
+        "upper_level": "A²Π",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "CO₂⁺",
+        "system": "Bands λλ 2896 and 2883",
+        "wavelength_nm": 288.2-288.6,
+        "wavelength_angstrom": 2882-2886,
+        "upper_level": "B²Σ<sub>u</sub>⁺",
+        "lower_level": "X²Π<sub>g",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO₂⁺",
+        "system": "Bands λλ 2896 and 2883",
+        "wavelength_nm": 289.6-289.9,
+        "wavelength_angstrom": 2896-2899,
+        "upper_level": "B²Σ<sub>u</sub>⁺",
+        "lower_level": "X²Π<sub>g",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "THE THIRD POSITIVE AND SB BANDS",
+        "wavelength_nm": 297.7,
+        "wavelength_angstrom": 2977,
+        "upper_level": "b³Σ",
+        "lower_level": "a³Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "CO",
+        "system": "THE ANGSTRÃM SYSTEM",
+        "wavelength_nm": 451.1,
+        "wavelength_angstrom": 4511,
+        "upper_level": "B¹Σ",
+        "lower_level": "A¹Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+ {
+        "molecule": "CO",
+        "system": "THE ANGSTRÃM SYSTEM",
+        "wavelength_nm": 483.6,
+        "wavelength_angstrom": 4836,
+        "upper_level": "B¹Σ",
+        "lower_level": "A¹Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "THE ANGSTRÃM SYSTEM",
+        "wavelength_nm": 519.8,
+        "wavelength_angstrom": 5198,
+        "upper_level": "B¹Σ",
+        "lower_level": "A¹Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "THE ANGSTRÃM SYSTEM",
+        "wavelength_nm": 561.0,
+        "wavelength_angstrom":5610,
+        "upper_level": "B¹Σ",
+        "lower_level": "A¹Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "THE CAMERON BANDS",
+        "wavelength_nm": 238.9,
+        "wavelength_angstrom":2389,
+        "upper_level": "a³Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "THE CAMERON BANDS",
+        "wavelength_nm":249.0,
+        "wavelength_angstrom":2490,
+        "upper_level": "a³Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "FOURTH POSITIVE SYSTEM",
+        "wavelength_nm":191.4,
+        "wavelength_angstrom":1914,
+        "upper_level": "A¹Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "FOURTH POSITIVE SYSTEM",
+        "wavelength_nm":192.7,
+        "wavelength_angstrom":1927,
+        "upper_level": "A¹Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "FOURTH POSITIVE SYSTEM",
+        "wavelength_nm":194.7,
+        "wavelength_angstrom":1947,
+        "upper_level": "A¹Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "FOURTH POSITIVE SYSTEM",
+        "wavelength_nm":200.6,
+        "wavelength_angstrom":2006,
+        "upper_level": "A¹Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+{
+        "molecule": "CO",
+        "system": "FOURTH POSITIVE SYSTEM",
+        "wavelength_nm":202.6,
+        "wavelength_angstrom":2026,
+        "upper_level": "A¹Π",
+        "lower_level": "X¹Σ",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+
+    {
+        "molecule": "C₂",
+        "system": "d³Πg → a³Πu, Δν = 1",
+        "wavelength_nm": 473.7,
+        "wavelength_angstrom": 4737,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "C₂",
+        "system": "d³Πg → a³Πu, Δν = 0",
+        "wavelength_nm": 516.5,
+        "wavelength_angstrom": 5165,
+        "upper_level": "d³Πg",
+        "lower_level": "a³Πu",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "CH",
+        "system": "C²Σ → X²Π, Δν = 0",
+        "wavelength_nm": 314.5,
+        "wavelength_angstrom": 3145,
+        "upper_level": "C²Σ",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "CH",
+        "system": "B²Σ → X²Π, Δν = 0",
+        "wavelength_nm": 387.1,
+        "wavelength_angstrom": 3871,
+        "upper_level": "B²Σ",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    },
+    {
+        "molecule": "CH",
+        "system": "A²Δ → X²Π, Δν = 0",
+        "wavelength_nm": 431.5,
+        "wavelength_angstrom": 4315,
+        "upper_level": "A²Δ",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Zhang et al. (2022)"
+    }
+]

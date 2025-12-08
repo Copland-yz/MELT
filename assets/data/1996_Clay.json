@@ -19,7 +19,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "H₂",
         "system": "N/A",
         "wavelength_nm": 463.0,
@@ -29,7 +29,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "H₂",
         "system": "N/A",
         "wavelength_nm": 602.0,
@@ -39,7 +39,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 540.0,
@@ -49,7 +49,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 580.0,
@@ -59,7 +59,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 650.0,
@@ -69,7 +69,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 750.0,
@@ -79,7 +79,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 316.0,
@@ -89,7 +89,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 337.0,
@@ -99,7 +99,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 357.0,
@@ -109,7 +109,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 380.0,
@@ -119,7 +119,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 400.0,
@@ -129,7 +129,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
- {
+    {
         "molecule": "N₂",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 420.0,
@@ -140,7 +140,7 @@
         "source": "Clay et al. (1996) "
     },
 
-{
+    {
         "molecule": "N₂⁺",
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 391.0,
@@ -150,7 +150,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
-{
+    {
         "molecule": "N₂⁺",
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 428.0,
@@ -160,17 +160,8 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
-{
-        "molecule": "CN",
-        "system": "  ",
-        "wavelength_nm": 422.0,
-        "wavelength_angstrom": 4220,
-        "upper_level": "B²Σ",
-        "lower_level": "X²Σ",
-        "intensity": null,
-        "source": "Clay et al. (1996) "
-    },
-{
+
+   {
         "molecule": "CN",
         "system": "VIOLET SYSTEM",
         "wavelength_nm": 388.0,
@@ -180,7 +171,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
-{
+   {
         "molecule": "CN",
         "system": "VIOLET SYSTEM",
         "wavelength_nm": 422.0,
@@ -190,7 +181,7 @@
         "intensity": null,
         "source": "Clay et al. (1996) "
     },
-{
+    {
         "molecule": "CN",
         "system": "VIOLET SYSTEM",
         "wavelength_nm": 359.0,

@@ -38,9 +38,16 @@
         "lower_level": "X²Π",
         "intensity": null,
         "source": "Kiristi et al. (2015) "
+    },
+    {
+        "molecule": "O₂",
+        "system": "N/A",
+        "wavelength_nm": 686.45,
+        "wavelength_angstrom": 6864.5,
+        "upper_level": "A¹∑",
+        "lower_level": "X³∑",
+        "intensity": null,
+        "source": "Kiristi et al. (2015) "
     }
 ]
 
-
-
-]

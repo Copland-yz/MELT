@@ -1,0 +1,46 @@
+[
+    {
+        "molecule": "CO",
+        "system": "N/A",
+        "wavelength_nm": 583.57,
+        "wavelength_angstrom": 5835.7,
+        "upper_level": "d³Π",
+        "lower_level": "a³Π",
+        "intensity": null,
+        "source": " Kiristi et al. (2015) "
+    },
+    {
+        "molecule": "CO",
+        "system": "N/A",
+        "wavelength_nm": 482.83,
+        "wavelength_angstrom": 4828.3,
+        "upper_level": "d³Π",
+        "lower_level": "a³Π",
+        "intensity": null,
+        "source": "Kiristi et al. (2015) "
+    },
+    {
+        "molecule": "CO",
+        "system": "N/A",
+        "wavelength_nm": 567.86,
+        "wavelength_angstrom": 5678.6,
+        "upper_level": "d³Π",
+        "lower_level": "a³Π",
+        "intensity": null,
+        "source": "Kiristi et al. (2015) "
+    },
+    {
+        "molecule": "CH",
+        "system": "N/A",
+        "wavelength_nm": 430.3,
+        "wavelength_angstrom": 4303,
+        "upper_level": "A²∆",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Kiristi et al. (2015) "
+    }
+]
+
+
+
+]

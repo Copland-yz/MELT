@@ -1,112 +1,102 @@
 [
     {
         "molecule": "O2+",
-        "system": "FOX, DUFFENDACK AND BARKER'S SYSTEM, A²Π–X²Π",
+        "system": "-",
         "wavelength_nm": 289.2,
         "wavelength_angstrom": 2892.0,
-        "upper_level": "A²Π",
-        "lower_level": "X²Π",
+        "upper_level": "A²Πu",
+        "lower_level": "X²Πg",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "O2+",
-        "system": "FOX, DUFFENDACK AND BARKER'S SYSTEM, A²Π–X²Π",
+        "system": "-",
         "wavelength_nm": 339.2,
         "wavelength_angstrom": 3392.0,
-        "upper_level": "A²Π",
-        "lower_level": "X²Π",
+        "upper_level": "A²Πu",
+        "lower_level": "X²Πg",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "O3",
-        "system": "B²–X¹A₁",
+        "system": "-",
         "wavelength_nm": 327.2,
         "wavelength_angstrom": 3272.0,
         "upper_level": "B²",
         "lower_level": "X¹A₁",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "CO2+",
-        "system": "A²Π–X²Π",
+        "system": "-",
         "wavelength_nm": 353.2,
         "wavelength_angstrom": 3532.0,
         "upper_level": "A²Π",
         "lower_level": "X²Π",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)",
     },
     {
         "molecule": "C2",
-        "system": "C¹Πg–b¹Πu",
+        "system": "-",
         "wavelength_nm": 369.2,
         "wavelength_angstrom": 3692.0,
         "upper_level": "C¹Πg",
         "lower_level": "b¹Πu",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "C2",
-        "system": "A²Πg–X³Πu",
+        "system": "-",
         "wavelength_nm": 435.7,
         "wavelength_angstrom": 4357.0,
         "upper_level": "A²Πg",
         "lower_level": "X³Πu",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "CO2",
-        "system": "B²–X¹Σ⁺",
+        "system": "-",
         "wavelength_nm": 391.7,
         "wavelength_angstrom": 3917.0,
         "upper_level": "B²",
         "lower_level": "X¹Σ⁺",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "CO+",
-        "system": "A²Π–X²Σ",
+        "system": "-",
         "wavelength_nm": 577.7,
         "wavelength_angstrom": 5777.0,
         "upper_level": "A²Π",
         "lower_level": "X²Σ",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "O2",
-        "system": "b¹Σg–X³Σg",
+        "system": "-",
         "wavelength_nm": 628.2,
         "wavelength_angstrom": 6282.0,
-        "upper_level": "b¹Σg",
-        "lower_level": "X³Σg",
+        "upper_level": "b¹Σg+",
+        "lower_level": "X³Σg+",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     },
     {
         "molecule": "CO",
-        "system": "a³Σ–a²Π",
+        "system": "-",
         "wavelength_nm": 674.7,
         "wavelength_angstrom": 6747.0,
         "upper_level": "a³Σ",
         "lower_level": "a²Π",
         "intensity": null,
-        "source": "本文实验数据",
-        "page": null
+        "source": "Reyes et al. (2008)"
     }
 ]

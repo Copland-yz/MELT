@@ -153,6 +153,71 @@
         "source": "Pearse & Gaydon (1976) p.117",
         "page": 117
     },
+        {
+        "molecule": "CO2+",
+        "system": "BANDS λ2883 AND 2896, A²Σ⁺–X²Π",
+        "wavelength_nm": 289.75,
+        "wavelength_angstrom": 2897.5,
+        "upper_level": "A²Σ⁺",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Pearse & Gaydon (1976) p.117",
+        "page": 117
+    },
+        {
+        "molecule": "CO2+",
+        "system": "BANDS λ2883 AND 2896, A²Σ⁺–X²Π",
+        "wavelength_nm": 289.51,
+        "wavelength_angstrom": 2895.1,
+        "upper_level": "A²Σ⁺",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Pearse & Gaydon (1976) p.117",
+        "page": 117
+    },
+        {
+        "molecule": "CO2+",
+        "system": "BANDS λ2883 AND 2896, A²Σ⁺–X²Π",
+        "wavelength_nm": 288.18,
+        "wavelength_angstrom": 2881.8,
+        "upper_level": "A²Σ⁺",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Pearse & Gaydon (1976) p.117",
+        "page": 117
+    },
+        {
+        "molecule": "CO2+",
+        "system": "BANDS λ2883 AND 2896, A²Σ⁺–X²Π",
+        "wavelength_nm": 289.05,
+        "wavelength_angstrom": 2890.5,
+        "upper_level": "A²Σ⁺",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Pearse & Gaydon (1976) p.117",
+        "page": 117
+    },
+        {
+        "molecule": "CO2+",
+        "system": "BANDS λ2883 AND 2896, A²Σ⁺–X²Π",
+        "wavelength_nm": 287.48,
+        "wavelength_angstrom": 2874.8,
+        "upper_level": "A²Σ⁺",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Pearse & Gaydon (1976) p.117",
+        "page": 117
+    },    {
+        "molecule": "CO2+",
+        "system": "BANDS λ2883 AND 2896, A²Σ⁺–X²Π",
+        "wavelength_nm": 287.75,
+        "wavelength_angstrom": 2877.5,
+        "upper_level": "A²Σ⁺",
+        "lower_level": "X²Π",
+        "intensity": null,
+        "source": "Pearse & Gaydon (1976) p.117",
+        "page": 117
+    },
     {
         "molecule": "C2O",
         "system": "8580 Å SYSTEM, A³Π–X³Σ",

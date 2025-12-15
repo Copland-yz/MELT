@@ -44,7 +44,7 @@
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 540.0,
         "wavelength_angstrom": 5400,
-        "upper_level": "B³Π<sub>g</sub>",
+        "upper_level": "B³Π<sub>g</sub>⁺",
         "lower_level": "A³Σ<sub>u</sub>⁺",
         "intensity": null,
         "source": "Clay et al. (1996) "
@@ -54,7 +54,7 @@
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 580.0,
         "wavelength_angstrom": 5800,
-        "upper_level": "B³Π<sub>g</sub>",
+        "upper_level": "B³Π<sub>g</sub>⁺",
         "lower_level": "A³Σ<sub>u</sub>⁺",
         "intensity": null,
         "source": "Clay et al. (1996) "
@@ -64,7 +64,7 @@
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 650.0,
         "wavelength_angstrom": 6500,
-        "upper_level": "B³Π<sub>g</sub>",
+        "upper_level": "B³Π<sub>g</sub>⁺",
         "lower_level": "A³Σ<sub>u</sub>⁺",
         "intensity": null,
         "source": "Clay et al. (1996) "
@@ -74,7 +74,7 @@
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 750.0,
         "wavelength_angstrom": 7500,
-        "upper_level": "B³Π<sub>g</sub>",
+        "upper_level": "B³Π<sub>g</sub>⁺",
         "lower_level": "A³Σ<sub>u</sub>⁺",
         "intensity": null,
         "source": "Clay et al. (1996) "

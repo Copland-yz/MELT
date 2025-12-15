@@ -1,11 +1,11 @@
 [
     {
         "molecule": "O₂⁺",
-        "system": "SECOND NEGATIVE SYSTEM, A²Πu–X²Πg",
+        "system": "SECOND NEGATIVE SYSTEM, A²Πu–X²Π<sub>g</sub>",
         "wavelength_nm": 610.29,
         "wavelength_angstrom": 6102.9,
         "upper_level": "A²Πu",
-        "lower_level": "X²Πg",
+        "lower_level": "X²Π<sub>g</sub>",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.262",
         "page": 262

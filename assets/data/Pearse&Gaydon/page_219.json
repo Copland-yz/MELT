@@ -4,8 +4,8 @@
         "system": "FIRST POSITIVE SYSTEM",
         "wavelength_nm": 750.39,
         "wavelength_angstrom": 7503.9,
-        "upper_level": "B³Π<sub>g</sub>+",
-        "lower_level": "A³Πᵤ+",
+        "upper_level": "B³Π<sub>g</sub>⁺",
+        "lower_level": "A³Π<sub>u</sub>⁺",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.219",
         "page": 219

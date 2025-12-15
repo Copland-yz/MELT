@@ -66,7 +66,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2180 Å SYSTEM f¹Σ–a¹Σ",
         "wavelength_nm": 218.06,
         "wavelength_angstrom": 2180.6,
@@ -77,7 +77,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2180 Å SYSTEM f¹Σ–a¹Σ",
         "wavelength_nm": 215.35,
         "wavelength_angstrom": 2153.5,
@@ -88,7 +88,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2180 Å SYSTEM f¹Σ–a¹Σ",
         "wavelength_nm": 212.99,
         "wavelength_angstrom": 2129.9,
@@ -99,7 +99,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2180 Å SYSTEM f¹Σ–a¹Σ",
         "wavelength_nm": 210.93,
         "wavelength_angstrom": 2109.3,
@@ -110,7 +110,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 326.33,
         "wavelength_angstrom": 3263.3,
@@ -121,7 +121,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 318.51,
         "wavelength_angstrom": 3185.1,
@@ -132,7 +132,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 309.24,
         "wavelength_angstrom": 3092.4,
@@ -143,7 +143,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 306.33,
         "wavelength_angstrom": 3063.3,
@@ -154,7 +154,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 301.96,
         "wavelength_angstrom": 3019.6,
@@ -165,7 +165,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 295.25,
         "wavelength_angstrom": 2952.5,
@@ -176,7 +176,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "3185 Å SYSTEM c¹Σ–a¹Σ",
         "wavelength_nm": 291.57,
         "wavelength_angstrom": 2915.7,
@@ -187,7 +187,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 284.32,
         "wavelength_angstrom": 2843.2,
@@ -198,7 +198,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 278.2,
         "wavelength_angstrom": 2782.0,
@@ -209,7 +209,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 271.75,
         "wavelength_angstrom": 2717.5,
@@ -220,7 +220,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 271.69,
         "wavelength_angstrom": 2716.9,
@@ -231,7 +231,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 267.79,
         "wavelength_angstrom": 2677.9,
@@ -242,7 +242,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 266.01,
         "wavelength_angstrom": 2660.1,
@@ -253,7 +253,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 263.96,
         "wavelength_angstrom": 2639.6,
@@ -264,7 +264,7 @@
         "page": 106
     },
     {
-        "molecule": "CN+",
+        "molecule": "CN⁺",
         "system": "2660 Å SYSTEM, d¹Π–b¹Π",
         "wavelength_nm": 260.03,
         "wavelength_angstrom": 2600.3,

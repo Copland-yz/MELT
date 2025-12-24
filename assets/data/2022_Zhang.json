@@ -40,26 +40,6 @@
         "source": "Zhang et al. (2022)"
     },
     {
-        "molecule": "CO2+",
-        "system": "Bands 2896 and 2883",
-        "wavelength_nm": 288.2-288.6,
-        "wavelength_angstrom": 2882-2886,
-        "upper_level": "A²Σ⁺",
-        "lower_level": "X²Π",
-        "intensity": null,
-        "source": "Zhang et al. (2022)"
-    },
-    {
-        "molecule": "CO2+",
-        "system": "Bands 2896 and 2883",
-        "wavelength_nm": 289.6-289.9,
-        "wavelength_angstrom": 2896-2899,
-        "upper_level": "A²Σ⁺",
-        "lower_level": "X²Π",
-        "intensity": null,
-        "source": "Zhang et al. (2022)"
-    },
-    {
         "molecule": "CO",
         "system": "THE THIRD POSITIVE AND SB BANDS",
         "wavelength_nm": 297.7,

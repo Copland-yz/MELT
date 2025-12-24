@@ -265,11 +265,11 @@
     },
     {
         "molecule": "NO",
-        "system": "δ SYSTEM, C²Π–X²��",
+        "system": "δ SYSTEM, C²Π–X²Π",
         "wavelength_nm": 224.54,
         "wavelength_angstrom": 2245.4,
         "upper_level": "C²Π",
-        "lower_level": "X²��",
+        "lower_level": "X²Π",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.238",
         "page": 238

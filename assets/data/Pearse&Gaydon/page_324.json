@@ -155,7 +155,7 @@
     },
     {
         "molecule": "SnBr",
-        "system": "ULTRA-VIOLET SYSTEM, 3428��2915 Å, B²Σ–X²Π",
+        "system": "ULTRA-VIOLET SYSTEM, 3428–2915 Å, B²Σ–X²Π",
         "wavelength_nm": 326.37,
         "wavelength_angstrom": 3263.7,
         "upper_level": "B²Σ",

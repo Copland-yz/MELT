@@ -268,8 +268,8 @@
         "system": "Tail Bands",
         "wavelength_nm": 368.90,
         "wavelength_angstrom": 3689.0,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.85",
         "page": 85
@@ -279,8 +279,8 @@
         "system": "Tail Bands",
         "wavelength_nm": 361.79,
         "wavelength_angstrom": 3617.9,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.85",
         "page": 85
@@ -290,8 +290,8 @@
         "system": "Tail Bands",
         "wavelength_nm": 359.93,
         "wavelength_angstrom": 3599.3,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.85",
         "page": 85
@@ -301,8 +301,8 @@
         "system": "Tail Bands",
         "wavelength_nm": 343.19,
         "wavelength_angstrom": 3431.9,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.85",
         "page": 85

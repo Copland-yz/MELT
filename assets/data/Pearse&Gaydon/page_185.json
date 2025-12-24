@@ -320,10 +320,10 @@
     },
     {
         "molecule": "HgI",
-        "system": "SYSTEM F₃, 2350–2260 Å, F���–X²Σ",
+        "system": "SYSTEM F₃, 2350–2260 Å, F₃–X²Σ",
         "wavelength_nm": 233.57,
         "wavelength_angstrom": 2335.7,
-        "upper_level": "F���",
+        "upper_level": "F₃",
         "lower_level": "X²Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.185",

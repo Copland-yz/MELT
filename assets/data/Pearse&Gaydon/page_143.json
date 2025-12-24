@@ -276,7 +276,7 @@
     },
     {
         "molecule": "CrCl",
-        "system": "⁶Π–⁶��",
+        "system": "⁶Π–⁶Σ",
         "wavelength_nm": 614.05,
         "wavelength_angstrom": 6140.5,
         "upper_level": "⁶Π",

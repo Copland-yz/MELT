@@ -532,8 +532,8 @@
         "system": "HERZBERG SYSTEM II, c¹Σu⁻–X³Σg⁻",
         "wavelength_nm": 479.15,
         "wavelength_angstrom": 4791.5,
-        "upper_level": "0",
-        "lower_level": "8",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.258",
         "page": 258
@@ -543,8 +543,8 @@
         "system": "HERZBERG SYSTEM II, c¹Σu⁻–X³Σg⁻",
         "wavelength_nm": 449.13,
         "wavelength_angstrom": 4491.3,
-        "upper_level": "0",
-        "lower_level": "7",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.258",
         "page": 258

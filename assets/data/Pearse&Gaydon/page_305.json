@@ -246,8 +246,8 @@
         "system": "IX. 4560 Å",
         "wavelength_nm": 455.92,
         "wavelength_angstrom": 4559.2,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.305",
         "page": 305
@@ -257,8 +257,8 @@
         "system": "IX. 4560 Å",
         "wavelength_nm": 454.38,
         "wavelength_angstrom": 4543.8,
-        "upper_level": "1",
-        "lower_level": "1",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.305",
         "page": 305

@@ -180,8 +180,8 @@
         "system": "B¹Σ - X¹Σ system, 3900-3600 Å",
         "wavelength_nm": 388.11,
         "wavelength_angstrom": 3881.1,
-        "upper_level": "0",
-        "lower_level": "2",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.340",
         "page": 340
@@ -191,8 +191,8 @@
         "system": "B¹Σ - X¹Σ system, 3900-3600 Å",
         "wavelength_nm": 372.83,
         "wavelength_angstrom": 3728.3,
-        "upper_level": "1",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.340",
         "page": 340
@@ -400,8 +400,8 @@
         "system": "Red-degraded band",
         "wavelength_nm": 558.9,
         "wavelength_angstrom": 5589,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.340",
         "page": 340

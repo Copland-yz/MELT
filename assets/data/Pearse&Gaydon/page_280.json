@@ -103,8 +103,8 @@
         "system": "ULTRA-VIOLET SYSTEM, 2960–2590 Å, B–X²Π₁/₂",
         "wavelength_nm": 288.27,
         "wavelength_angstrom": 2882.7,
-        "upper_level": "0",
-        "lower_level": "1",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.280",
         "page": 280
@@ -114,8 +114,8 @@
         "system": "ULTRA-VIOLET SYSTEM, 2960–2590 Å, B–X²Π₁/₂",
         "wavelength_nm": 285.8,
         "wavelength_angstrom": 2858.0,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.280",
         "page": 280
@@ -125,8 +125,8 @@
         "system": "ULTRA-VIOLET SYSTEM, 2960–2590 Å, B–X²Π₁/₂",
         "wavelength_nm": 282.69,
         "wavelength_angstrom": 2826.9,
-        "upper_level": "1",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.280",
         "page": 280
@@ -136,8 +136,8 @@
         "system": "ULTRA-VIOLET SYSTEM, 2960–2590 Å, B–X²Π₁/₂",
         "wavelength_nm": 279.67,
         "wavelength_angstrom": 2796.7,
-        "upper_level": "2",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.280",
         "page": 280

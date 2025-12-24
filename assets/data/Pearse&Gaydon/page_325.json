@@ -320,11 +320,11 @@
     },
     {
         "molecule": "SnCl",
-        "system": "3405–2830 Å SYSTEM, B²Σ���X²Π",
+        "system": "3405–2830 Å SYSTEM, B²Σ–X²Π",
         "wavelength_nm": 293.58,
         "wavelength_angstrom": 2935.8,
-        "upper_level": "1",
-        "lower_level": "0 ii",
+        "upper_level": "B²Σ",
+        "lower_level": "X²Π",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.325",
         "page": 325

@@ -4,8 +4,8 @@
         "system": "ULTRA-VIOLET",
         "wavelength_nm": 330.77,
         "wavelength_angstrom": 3307.7,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.199",
         "page": 199
@@ -15,8 +15,8 @@
         "system": "ULTRA-VIOLET",
         "wavelength_nm": 330.61,
         "wavelength_angstrom": 3306.1,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.199",
         "page": 199
@@ -26,8 +26,8 @@
         "system": "ULTRA-VIOLET",
         "wavelength_nm": 337.46,
         "wavelength_angstrom": 3374.6,
-        "upper_level": "0",
-        "lower_level": "1",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.199",
         "page": 199
@@ -37,8 +37,8 @@
         "system": "ULTRA-VIOLET",
         "wavelength_nm": 317.83,
         "wavelength_angstrom": 3178.3,
-        "upper_level": "1",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.199",
         "page": 199

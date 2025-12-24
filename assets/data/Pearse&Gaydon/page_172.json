@@ -5,7 +5,7 @@
         "wavelength_nm": null,
         "wavelength_angstrom": null,
         "upper_level": "ULTRA-VIOLET λ2375",
-        "lower_level": "1980",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.172",
         "page": 172

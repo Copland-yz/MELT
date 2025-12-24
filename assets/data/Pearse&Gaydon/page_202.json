@@ -298,11 +298,11 @@
     },
     {
         "molecule": "LiH",
-        "system": "3900 Å SYSTEM, A¹Σ⁺–X¹Σ��",
+        "system": "3900 Å SYSTEM, A¹Σ⁺–X¹Σ⁺",
         "wavelength_nm": 343.22,
         "wavelength_angstrom": 3432.2,
         "upper_level": "A¹Σ⁺",
-        "lower_level": "X¹Σ��",
+        "lower_level": "X¹Σ⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.202",
         "page": 202

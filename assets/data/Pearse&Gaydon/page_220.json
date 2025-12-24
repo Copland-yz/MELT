@@ -15,8 +15,8 @@
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 324.42,
         "wavelength_angstrom": 3244.2,
-        "upper_level": "5",
-        "lower_level": "5",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.220",
         "page": 220
@@ -48,8 +48,8 @@
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 308.51,
         "wavelength_angstrom": 3085.1,
-        "upper_level": "5",
-        "lower_level": "4",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.220",
         "page": 220
@@ -81,8 +81,8 @@
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 293.84,
         "wavelength_angstrom": 2938.4,
-        "upper_level": "5",
-        "lower_level": "3",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.220",
         "page": 220
@@ -103,8 +103,8 @@
         "system": "SECOND POSITIVE SYSTEM",
         "wavelength_nm": 280.46,
         "wavelength_angstrom": 2804.6,
-        "upper_level": "5",
-        "lower_level": "2",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.220",
         "page": 220

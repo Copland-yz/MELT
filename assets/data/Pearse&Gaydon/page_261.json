@@ -155,7 +155,7 @@
     },
     {
         "molecule": "O₂⁺",
-        "system": "FIRST NEGATIVE SYSTEM, b⁴Σg⁻–a��Πu",
+        "system": "FIRST NEGATIVE SYSTEM, b⁴Σg⁻–a⁴Πu",
         "wavelength_nm": 581.4,
         "wavelength_angstrom": 5814,
         "upper_level": "b⁴Σg⁻",
@@ -188,7 +188,7 @@
     },
     {
         "molecule": "O₂⁺",
-        "system": "FIRST NEGATIVE SYSTEM, b��Σg⁻–a⁴Πu",
+        "system": "FIRST NEGATIVE SYSTEM, b⁴Σg⁻–a⁴Πu",
         "wavelength_nm": 556.66,
         "wavelength_angstrom": 5566.6,
         "upper_level": "b⁴Σg⁻",

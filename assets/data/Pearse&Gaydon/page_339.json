@@ -4,8 +4,8 @@
         "system": "ULTRA-VIOLET SYSTEM, C¹Σ - X¹Σ",
         "wavelength_nm": 358.69,
         "wavelength_angstrom": 3586.9,
-        "upper_level": "0",
-        "lower_level": "1",
+        "upper_level": "C¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -15,8 +15,8 @@
         "system": "ULTRA-VIOLET SYSTEM, C¹Σ - X¹Σ",
         "wavelength_nm": 352.54,
         "wavelength_angstrom": 3525.4,
-        "upper_level": "1",
-        "lower_level": "1",
+        "upper_level": "C¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -26,8 +26,8 @@
         "system": "ULTRA-VIOLET SYSTEM, C¹Σ - X¹Σ",
         "wavelength_nm": 350.38,
         "wavelength_angstrom": 3503.8,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "C¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -37,8 +37,8 @@
         "system": "ULTRA-VIOLET SYSTEM, C¹Σ - X¹Σ",
         "wavelength_nm": 344.52,
         "wavelength_angstrom": 3445.2,
-        "upper_level": "1",
-        "lower_level": "0",
+        "upper_level": "C¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -48,8 +48,8 @@
         "system": "ULTRA-VIOLET SYSTEM, C¹Σ - X¹Σ",
         "wavelength_nm": 338.98,
         "wavelength_angstrom": 3389.8,
-        "upper_level": "2",
-        "lower_level": "0",
+        "upper_level": "C¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -59,8 +59,8 @@
         "system": "ULTRA-VIOLET SYSTEM, C¹Σ - X¹Σ",
         "wavelength_nm": 333.75,
         "wavelength_angstrom": 3337.5,
-        "upper_level": "3",
-        "lower_level": "0",
+        "upper_level": "C¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -70,8 +70,8 @@
         "system": "NEAR INFRA-RED SYSTEM, A'¹Π - X¹Σ",
         "wavelength_nm": 772.3,
         "wavelength_angstrom": 7723.0,
-        "upper_level": "8",
-        "lower_level": "0",
+        "upper_level": "A'¹Π",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -81,8 +81,8 @@
         "system": "NEAR INFRA-RED SYSTEM, A'¹Π - X¹Σ",
         "wavelength_nm": 747.29,
         "wavelength_angstrom": 7472.9,
-        "upper_level": "9",
-        "lower_level": "0",
+        "upper_level": "A'¹Π",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
@@ -92,14 +92,14 @@
         "system": "NEAR INFRA-RED SYSTEM, A'¹Π - X¹Σ",
         "wavelength_nm": 723.8,
         "wavelength_angstrom": 7238.0,
-        "upper_level": "10",
-        "lower_level": "0",
+        "upper_level": "A'¹Π",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.339",
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 593.8,
         "wavelength_angstrom": 5938,
@@ -110,7 +110,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.9,
         "wavelength_angstrom": 5969,
@@ -121,7 +121,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 594.54,
         "wavelength_angstrom": 5945.4,
@@ -132,7 +132,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 595.07,
         "wavelength_angstrom": 5950.7,
@@ -143,7 +143,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 595.28,
         "wavelength_angstrom": 5952.8,
@@ -154,7 +154,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 595.42,
         "wavelength_angstrom": 5954.2,
@@ -165,7 +165,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 595.54,
         "wavelength_angstrom": 5955.4,
@@ -176,7 +176,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 595.76,
         "wavelength_angstrom": 5957.6,
@@ -187,7 +187,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.24,
         "wavelength_angstrom": 5962.4,
@@ -198,7 +198,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.31,
         "wavelength_angstrom": 5963.1,
@@ -209,7 +209,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.51,
         "wavelength_angstrom": 5965.1,
@@ -220,7 +220,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 597.25,
         "wavelength_angstrom": 5972.5,
@@ -231,7 +231,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 597.63,
         "wavelength_angstrom": 5976.3,
@@ -242,7 +242,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 597.7,
         "wavelength_angstrom": 5977.0,
@@ -253,7 +253,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 598.06,
         "wavelength_angstrom": 5980.6,
@@ -264,7 +264,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 598.62,
         "wavelength_angstrom": 5986.2,
@@ -275,7 +275,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.74,
         "wavelength_angstrom": 5967.4,
@@ -286,7 +286,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.63,
         "wavelength_angstrom": 5966.3,
@@ -297,7 +297,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 596.56,
         "wavelength_angstrom": 5965.6,
@@ -308,7 +308,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "5950 Å band",
         "wavelength_nm": 597.48,
         "wavelength_angstrom": 5974.8,
@@ -319,7 +319,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 667.24,
         "wavelength_angstrom": 6672.4,
@@ -330,7 +330,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 663.43,
         "wavelength_angstrom": 6634.3,
@@ -341,7 +341,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 660.06,
         "wavelength_angstrom": 6600.6,
@@ -352,7 +352,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 658.58,
         "wavelength_angstrom": 6585.8,
@@ -363,7 +363,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 652.14,
         "wavelength_angstrom": 6521.4,
@@ -374,7 +374,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 651.58,
         "wavelength_angstrom": 6515.8,
@@ -385,7 +385,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 651.16,
         "wavelength_angstrom": 6511.6,
@@ -396,7 +396,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 650.78,
         "wavelength_angstrom": 6507.8,
@@ -407,7 +407,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 646.61,
         "wavelength_angstrom": 6466.1,
@@ -418,7 +418,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 645.44,
         "wavelength_angstrom": 6454.4,
@@ -429,7 +429,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 645.11,
         "wavelength_angstrom": 6451.1,
@@ -440,7 +440,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 644.73,
         "wavelength_angstrom": 6447.3,
@@ -451,7 +451,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 645.7,
         "wavelength_angstrom": 6457,
@@ -462,7 +462,7 @@
         "page": 339
     },
     {
-        "molecule": "Strontium Oxide",
+        "molecule": "SrO",
         "system": "Red bands",
         "wavelength_nm": 662.07,
         "wavelength_angstrom": 6620.7,

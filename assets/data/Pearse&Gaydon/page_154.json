@@ -243,10 +243,10 @@
     },
     {
         "molecule": "F2",
-        "system": "7510–4220 Å, C��Σ⁺–B¹Π",
+        "system": "7510–4220 Å, C¹Σ⁺–B¹Π",
         "wavelength_nm": 698.25,
         "wavelength_angstrom": 6982.5,
-        "upper_level": "C��Σ⁺",
+        "upper_level": "C¹Σ⁺",
         "lower_level": "B¹Π",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.154",

@@ -5,7 +5,7 @@
         "wavelength_nm": 283.94,
         "wavelength_angstrom": 2839.4,
         "upper_level": "l",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -16,7 +16,7 @@
         "wavelength_nm": 282.71,
         "wavelength_angstrom": 2827.1,
         "upper_level": "p'",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 9,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -27,7 +27,7 @@
         "wavelength_nm": 279.6,
         "wavelength_angstrom": 2796.0,
         "upper_level": "r'",
-        "lower_level": "0, 1",
+        "lower_level": "Unknown",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -38,7 +38,7 @@
         "wavelength_nm": 279.56,
         "wavelength_angstrom": 2795.6,
         "upper_level": "h",
-        "lower_level": "0, 5",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -49,7 +49,7 @@
         "wavelength_nm": 279.54,
         "wavelength_angstrom": 2795.4,
         "upper_level": "d",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -60,7 +60,7 @@
         "wavelength_nm": 275.38,
         "wavelength_angstrom": 2753.8,
         "upper_level": "k",
-        "lower_level": "0, 2",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -71,7 +71,7 @@
         "wavelength_nm": 274.62,
         "wavelength_angstrom": 2746.2,
         "upper_level": "m",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -82,7 +82,7 @@
         "wavelength_nm": 274.43,
         "wavelength_angstrom": 2744.3,
         "upper_level": "d''",
-        "lower_level": "0, 2",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -93,7 +93,7 @@
         "wavelength_nm": 272.36,
         "wavelength_angstrom": 2723.6,
         "upper_level": "o",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -104,7 +104,7 @@
         "wavelength_nm": 269.99,
         "wavelength_angstrom": 2699.9,
         "upper_level": "e",
-        "lower_level": "0, 6",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -115,7 +115,7 @@
         "wavelength_nm": 267.85,
         "wavelength_angstrom": 2678.5,
         "upper_level": "h",
-        "lower_level": "0, 4",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -126,7 +126,7 @@
         "wavelength_nm": 267.17,
         "wavelength_angstrom": 2671.7,
         "upper_level": "r'",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -137,7 +137,7 @@
         "wavelength_nm": 262.62,
         "wavelength_angstrom": 2626.2,
         "upper_level": "d''",
-        "lower_level": "0, 1",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -148,7 +148,7 @@
         "wavelength_nm": 260.33,
         "wavelength_angstrom": 2603.3,
         "upper_level": "s'",
-        "lower_level": "0, 2",
+        "lower_level": "Unknown",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -159,7 +159,7 @@
         "wavelength_nm": 259.28,
         "wavelength_angstrom": 2592.8,
         "upper_level": "e",
-        "lower_level": "0, 5",
+        "lower_level": "Unknown",
         "intensity": 1,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -170,7 +170,7 @@
         "wavelength_nm": 256.96,
         "wavelength_angstrom": 2569.6,
         "upper_level": "h",
-        "lower_level": "0, 3",
+        "lower_level": "Unknown",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -181,7 +181,7 @@
         "wavelength_nm": 255.8,
         "wavelength_angstrom": 2558,
         "upper_level": "d'",
-        "lower_level": "0, 2",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -192,7 +192,7 @@
         "wavelength_nm": 252.49,
         "wavelength_angstrom": 2524.9,
         "upper_level": "k",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -203,7 +203,7 @@
         "wavelength_nm": 251.6,
         "wavelength_angstrom": 2516.0,
         "upper_level": "d''",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -214,7 +214,7 @@
         "wavelength_nm": 249.86,
         "wavelength_angstrom": 2498.6,
         "upper_level": "g",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -225,7 +225,7 @@
         "wavelength_nm": 249.68,
         "wavelength_angstrom": 2496.8,
         "upper_level": "s'",
-        "lower_level": "0, 1",
+        "lower_level": "Unknown",
         "intensity": 8,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -236,7 +236,7 @@
         "wavelength_nm": 249.24,
         "wavelength_angstrom": 2492.4,
         "upper_level": "e",
-        "lower_level": "0, 4",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -247,7 +247,7 @@
         "wavelength_nm": 245.51,
         "wavelength_angstrom": 2455.1,
         "upper_level": "d'",
-        "lower_level": "0, 1",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -258,7 +258,7 @@
         "wavelength_nm": 239.78,
         "wavelength_angstrom": 2397.8,
         "upper_level": "e",
-        "lower_level": "0, 3",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -269,7 +269,7 @@
         "wavelength_nm": 239.71,
         "wavelength_angstrom": 2397.1,
         "upper_level": "s'",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 9,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -280,7 +280,7 @@
         "wavelength_nm": 237.16,
         "wavelength_angstrom": 2371.6,
         "upper_level": "h",
-        "lower_level": "0, 1",
+        "lower_level": "Unknown",
         "intensity": 8,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -291,7 +291,7 @@
         "wavelength_nm": 235.8,
         "wavelength_angstrom": 2358,
         "upper_level": "d'",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -302,7 +302,7 @@
         "wavelength_nm": 230.86,
         "wavelength_angstrom": 2308.6,
         "upper_level": "e",
-        "lower_level": "0, 2",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -313,7 +313,7 @@
         "wavelength_nm": 228.15,
         "wavelength_angstrom": 2281.5,
         "upper_level": "h",
-        "lower_level": "0, 0",
+        "lower_level": "Unknown",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -324,7 +324,7 @@
         "wavelength_nm": 222.44,
         "wavelength_angstrom": 2224.4,
         "upper_level": "e",
-        "lower_level": "0, 1",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -334,8 +334,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 278.16,
         "wavelength_angstrom": 2781.6,
-        "upper_level": "1",
-        "lower_level": "8",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -345,8 +345,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 274.3,
         "wavelength_angstrom": 2743.0,
-        "upper_level": "2",
-        "lower_level": "9",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 1,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -356,8 +356,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 268.12,
         "wavelength_angstrom": 2681.2,
-        "upper_level": "1",
-        "lower_level": "7",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -367,8 +367,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 264.7,
         "wavelength_angstrom": 2647.0,
-        "upper_level": "2",
-        "lower_level": "8",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -378,8 +378,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 261.93,
         "wavelength_angstrom": 2619.3,
-        "upper_level": "0",
-        "lower_level": "5",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -389,8 +389,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 258.65,
         "wavelength_angstrom": 2586.5,
-        "upper_level": "1",
-        "lower_level": "6",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -400,8 +400,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 255.6,
         "wavelength_angstrom": 2556.0,
-        "upper_level": "2",
-        "lower_level": "7",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 1,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -411,8 +411,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 252.56,
         "wavelength_angstrom": 2525.6,
-        "upper_level": "0",
-        "lower_level": "4",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -422,8 +422,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 249.69,
         "wavelength_angstrom": 2496.9,
-        "upper_level": "1",
-        "lower_level": "5",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -433,8 +433,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 246.97,
         "wavelength_angstrom": 2469.7,
-        "upper_level": "2",
-        "lower_level": "6",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -444,8 +444,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 241.17,
         "wavelength_angstrom": 2411.7,
-        "upper_level": "1",
-        "lower_level": "4",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -455,8 +455,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 235.36,
         "wavelength_angstrom": 2353.6,
-        "upper_level": "0",
-        "lower_level": "2",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -466,8 +466,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 233.1,
         "wavelength_angstrom": 2331.0,
-        "upper_level": "1",
-        "lower_level": "3",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -477,8 +477,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 227.42,
         "wavelength_angstrom": 2274.2,
-        "upper_level": "0",
-        "lower_level": "1",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -488,8 +488,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 223.58,
         "wavelength_angstrom": 2235.8,
-        "upper_level": "2",
-        "lower_level": "3",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -499,8 +499,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 219.89,
         "wavelength_angstrom": 2198.9,
-        "upper_level": "0",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -510,8 +510,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 218.15,
         "wavelength_angstrom": 2181.5,
-        "upper_level": "1",
-        "lower_level": "1",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -521,8 +521,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 216.51,
         "wavelength_angstrom": 2165.1,
-        "upper_level": "2",
-        "lower_level": "2",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -532,8 +532,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 211.21,
         "wavelength_angstrom": 2112.1,
-        "upper_level": "1",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -543,8 +543,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 209.8,
         "wavelength_angstrom": 2098,
-        "upper_level": "2",
-        "lower_level": "1",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223
@@ -554,8 +554,8 @@
         "system": "FIFTH POSITIVE (VAN DER ZIEL) SYSTEM, x¹Σ<sub>g</sub>⁻–a'¹Σᵤ⁻",
         "wavelength_nm": 203.36,
         "wavelength_angstrom": 2033.6,
-        "upper_level": "2",
-        "lower_level": "0",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.223",
         "page": 223

@@ -166,10 +166,10 @@
     },
     {
         "molecule": "RbH",
-        "system": "5300 Å SYSTEM, A¹��–X¹Σ",
+        "system": "5300 Å SYSTEM, A¹Σ–X¹Σ",
         "wavelength_nm": 469.99,
         "wavelength_angstrom": 4699.9,
-        "upper_level": "A¹��",
+        "upper_level": "A¹Σ",
         "lower_level": "X¹Σ",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.291",

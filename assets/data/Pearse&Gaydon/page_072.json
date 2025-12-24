@@ -279,8 +279,8 @@
         "system": "TRIPLET BAND",
         "wavelength_nm": 385.07,
         "wavelength_angstrom": 3850.7,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.72",
         "page": 72
@@ -290,8 +290,8 @@
         "system": "TRIPLET BAND",
         "wavelength_nm": 385.37,
         "wavelength_angstrom": 3853.7,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.72",
         "page": 72
@@ -301,8 +301,8 @@
         "system": "TRIPLET BAND",
         "wavelength_nm": 385.63,
         "wavelength_angstrom": 3856.3,
-        "upper_level": null,
-        "lower_level": null,
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.72",
         "page": 72

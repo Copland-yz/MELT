@@ -59,8 +59,8 @@
         "system": "λλ2740–2520",
         "wavelength_nm": 272.05,
         "wavelength_angstrom": 2720.5,
-        "upper_level": "5",
-        "lower_level": "67",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.188",
         "page": 188
@@ -70,8 +70,8 @@
         "system": "λλ2740–2520",
         "wavelength_nm": 271.37,
         "wavelength_angstrom": 2713.7,
-        "upper_level": "6",
-        "lower_level": "67",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.188",
         "page": 188
@@ -81,8 +81,8 @@
         "system": "λλ2740–2520",
         "wavelength_nm": 271.32,
         "wavelength_angstrom": 2713.2,
-        "upper_level": "4",
-        "lower_level": "65",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.188",
         "page": 188
@@ -92,8 +92,8 @@
         "system": "λλ2740–2520",
         "wavelength_nm": 270.52,
         "wavelength_angstrom": 2705.2,
-        "upper_level": "3",
-        "lower_level": "63",
+        "upper_level": "Unknown",
+        "lower_level": "Unknown",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.188",
         "page": 188

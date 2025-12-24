@@ -60,7 +60,7 @@
         "wavelength_nm": 356.34,
         "wavelength_angstrom": 3563.4,
         "upper_level": "BANDS λ3600",
-        "lower_level": "3480",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -71,7 +71,7 @@
         "wavelength_nm": 354.1,
         "wavelength_angstrom": 3541.0,
         "upper_level": "BANDS λ3600",
-        "lower_level": "3480",
+        "lower_level": "Unknown",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -82,7 +82,7 @@
         "wavelength_nm": 351.8,
         "wavelength_angstrom": 3518.0,
         "upper_level": "BANDS λ3600",
-        "lower_level": "3480",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -93,7 +93,7 @@
         "wavelength_nm": 349.53,
         "wavelength_angstrom": 3495.3,
         "upper_level": "BANDS λ3600",
-        "lower_level": "3480",
+        "lower_level": "Unknown",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -104,7 +104,7 @@
         "wavelength_nm": 340.48,
         "wavelength_angstrom": 3404.8,
         "upper_level": "BANDS λ3500",
-        "lower_level": "3250",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -115,7 +115,7 @@
         "wavelength_nm": 338.48,
         "wavelength_angstrom": 3384.8,
         "upper_level": "BANDS λ3500",
-        "lower_level": "3250",
+        "lower_level": "Unknown",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -126,7 +126,7 @@
         "wavelength_nm": 336.22,
         "wavelength_angstrom": 3362.2,
         "upper_level": "BANDS λ3500",
-        "lower_level": "3250",
+        "lower_level": "Unknown",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136
@@ -137,7 +137,7 @@
         "wavelength_nm": 334.08,
         "wavelength_angstrom": 3340.8,
         "upper_level": "BANDS λ3500",
-        "lower_level": "3250",
+        "lower_level": "Unknown",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.136",
         "page": 136

@@ -38,7 +38,7 @@
         "wavelength_nm": 219.19,
         "wavelength_angstrom": 2191.9,
         "upper_level": "BANDS λ2240",
-        "lower_level": "2185",
+        "lower_level": "Unknown",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.134",
         "page": 134
@@ -49,7 +49,7 @@
         "wavelength_nm": 220.5,
         "wavelength_angstrom": 2205.0,
         "upper_level": "BANDS λ2240",
-        "lower_level": "2185",
+        "lower_level": "Unknown",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.134",
         "page": 134
@@ -60,7 +60,7 @@
         "wavelength_nm": 220.74,
         "wavelength_angstrom": 2207.4,
         "upper_level": "BANDS λ2240",
-        "lower_level": "2185",
+        "lower_level": "Unknown",
         "intensity": 8,
         "source": "Pearse & Gaydon (1976) p.134",
         "page": 134

@@ -5,7 +5,7 @@
         "wavelength_nm": 307.04,
         "wavelength_angstrom": 3070.4,
         "upper_level": "C²Δ₅/₂",
-        "lower_level": "X²Π₃/₂ SYSTEM",
+        "lower_level": "X²Π₃/₂",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.247",
         "page": 247
@@ -16,7 +16,7 @@
         "wavelength_nm": 300.24,
         "wavelength_angstrom": 3002.4,
         "upper_level": "C²Δ₅/₂",
-        "lower_level": "X²Π₃/₂ SYSTEM",
+        "lower_level": "X²Π₃/₂",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.247",
         "page": 247
@@ -27,7 +27,7 @@
         "wavelength_nm": 298.49,
         "wavelength_angstrom": 2984.9,
         "upper_level": "C²Δ₅/₂",
-        "lower_level": "X²Π₃/₂ SYSTEM",
+        "lower_level": "X²Π₃/₂",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.247",
         "page": 247
@@ -38,7 +38,7 @@
         "wavelength_nm": 290.31,
         "wavelength_angstrom": 2903.1,
         "upper_level": "C²Δ₅/₂",
-        "lower_level": "X²Π₃/₂ SYSTEM",
+        "lower_level": "X²Π₃/₂",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.247",
         "page": 247
@@ -49,7 +49,7 @@
         "wavelength_nm": 284.23,
         "wavelength_angstrom": 2842.3,
         "upper_level": "C²Δ₅/₂",
-        "lower_level": "X²Π₃/₂ SYSTEM",
+        "lower_level": "X²Π₃/₂",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.247",
         "page": 247

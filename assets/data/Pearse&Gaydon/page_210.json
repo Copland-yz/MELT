@@ -334,8 +334,8 @@
         "system": "³Δ–³Π",
         "wavelength_nm": 372.07,
         "wavelength_angstrom": 3720.7,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "³Δ",
+        "lower_level": "³Π",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.210",
         "page": 210
@@ -345,8 +345,8 @@
         "system": "³Δ–³Π",
         "wavelength_nm": 372.1,
         "wavelength_angstrom": 3721.0,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "³Δ",
+        "lower_level": "³Π",
         "intensity": 9,
         "source": "Pearse & Gaydon (1976) p.210",
         "page": 210
@@ -356,8 +356,8 @@
         "system": "³Δ–³Π",
         "wavelength_nm": 372.14,
         "wavelength_angstrom": 3721.4,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "³Δ",
+        "lower_level": "³Π",
         "intensity": 9,
         "source": "Pearse & Gaydon (1976) p.210",
         "page": 210
@@ -367,8 +367,8 @@
         "system": "³Δ–³Π",
         "wavelength_nm": 372.49,
         "wavelength_angstrom": 3724.9,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "³Δ",
+        "lower_level": "³Π",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.210",
         "page": 210

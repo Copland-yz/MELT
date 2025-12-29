@@ -180,8 +180,8 @@
         "system": "B¹Σ - X¹Σ system, 3900-3600 Å",
         "wavelength_nm": 388.11,
         "wavelength_angstrom": 3881.1,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "B¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.340",
         "page": 340
@@ -191,8 +191,8 @@
         "system": "B¹Σ - X¹Σ system, 3900-3600 Å",
         "wavelength_nm": 372.83,
         "wavelength_angstrom": 3728.3,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "B¹Σ",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.340",
         "page": 340

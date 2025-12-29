@@ -4,8 +4,8 @@
         "system": "ULTRA-VIOLET SYSTEMS, D²Σ⁺ - X²Σ⁺",
         "wavelength_nm": 346.59,
         "wavelength_angstrom": 3465.9,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D²Σ⁺",
+        "lower_level": "X²Σ⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.335",
         "page": 335
@@ -15,8 +15,8 @@
         "system": "ULTRA-VIOLET SYSTEMS, E²Σ⁺ - X²Σ⁺",
         "wavelength_nm": 310.24,
         "wavelength_angstrom": 3102.4,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "E²Σ⁺",
+        "lower_level": "X²Σ⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.335",
         "page": 335
@@ -26,8 +26,8 @@
         "system": "ULTRA-VIOLET SYSTEMS, F²Σ⁺ - X²Σ⁺",
         "wavelength_nm": 291.56,
         "wavelength_angstrom": 2915.6,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "F²Σ⁺",
+        "lower_level": "X²Σ⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.335",
         "page": 335

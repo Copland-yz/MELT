@@ -290,8 +290,8 @@
         "system": "E–X¹Σ<sub>g</sub>⁺, 3120–2880 Å",
         "wavelength_nm": 294.55,
         "wavelength_angstrom": 2945.5,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "E",
+        "lower_level": "X¹Σ<sub>g</sub>⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.248",
         "page": 248
@@ -301,8 +301,8 @@
         "system": "E–X¹Σ<sub>g</sub>⁺, 3120–2880 Å",
         "wavelength_nm": 293.62,
         "wavelength_angstrom": 2936.2,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "E",
+        "lower_level": "X¹Σ<sub>g</sub>⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.248",
         "page": 248
@@ -312,8 +312,8 @@
         "system": "E–X¹Σ<sub>g</sub>⁺, 3120–2880 Å",
         "wavelength_nm": 292.76,
         "wavelength_angstrom": 2927.6,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "E",
+        "lower_level": "X¹Σ<sub>g</sub>⁺",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.248",
         "page": 248

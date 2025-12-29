@@ -257,8 +257,8 @@
         "system": "BLUE SYSTEM, ²Δ - X²Π, Q₂",
         "wavelength_nm": 446.65,
         "wavelength_angstrom": 4466.5,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "²Δ",
+        "lower_level": "X²Π",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.327",
         "page": 327
@@ -268,8 +268,8 @@
         "system": "BLUE SYSTEM, ²Δ - X²Π, R₂",
         "wavelength_nm": 444.73,
         "wavelength_angstrom": 4447.3,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "²Δ",
+        "lower_level": "X²Π",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.327",
         "page": 327
@@ -279,8 +279,8 @@
         "system": "BLUE SYSTEM, ²Δ - X²Π, R₁",
         "wavelength_nm": 407.07,
         "wavelength_angstrom": 4070.7,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "²Δ",
+        "lower_level": "X²Π",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.327",
         "page": 327
@@ -290,8 +290,8 @@
         "system": "BLUE SYSTEM, ²Δ - X²Π, ⁵R₂₁",
         "wavelength_nm": 405.39,
         "wavelength_angstrom": 4053.9,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "²Δ",
+        "lower_level": "X²Π",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.327",
         "page": 327

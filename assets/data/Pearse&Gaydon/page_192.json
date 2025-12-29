@@ -5,7 +5,7 @@
         "wavelength_nm": 328.21,
         "wavelength_angstrom": 3282.1,
         "upper_level": "A³Π₀",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -16,7 +16,7 @@
         "wavelength_nm": 327.82,
         "wavelength_angstrom": 3278.2,
         "upper_level": "A³Π₀",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -27,7 +27,7 @@
         "wavelength_nm": 322.24,
         "wavelength_angstrom": 3222.4,
         "upper_level": "A³Π₀",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -38,7 +38,7 @@
         "wavelength_nm": 321.93,
         "wavelength_angstrom": 3219.3,
         "upper_level": "A³Π₀",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -49,7 +49,7 @@
         "wavelength_nm": 330.84,
         "wavelength_angstrom": 3308.4,
         "upper_level": "B³Π₁",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": null,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -60,7 +60,7 @@
         "wavelength_nm": 325.17,
         "wavelength_angstrom": 3251.7,
         "upper_level": "B³Π₁",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 0,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -71,7 +71,7 @@
         "wavelength_nm": 319.69,
         "wavelength_angstrom": 3196.9,
         "upper_level": "B³Π₁",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 6,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -82,7 +82,7 @@
         "wavelength_nm": 319.32,
         "wavelength_angstrom": 3193.2,
         "upper_level": "B³Π₁",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -93,7 +93,7 @@
         "wavelength_nm": 314.0,
         "wavelength_angstrom": 3140.0,
         "upper_level": "B³Π₁",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 2,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -104,7 +104,7 @@
         "wavelength_nm": 313.7,
         "wavelength_angstrom": 3137.0,
         "upper_level": "B³Π₁",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 3,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -115,7 +115,7 @@
         "wavelength_nm": 236.66,
         "wavelength_angstrom": 2366.6,
         "upper_level": "C¹Π",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 1,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -126,7 +126,7 @@
         "wavelength_nm": 234.71,
         "wavelength_angstrom": 2347.1,
         "upper_level": "C¹Π",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -137,7 +137,7 @@
         "wavelength_nm": 234.18,
         "wavelength_angstrom": 2341.8,
         "upper_level": "C¹Π",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -148,7 +148,7 @@
         "wavelength_nm": 233.73,
         "wavelength_angstrom": 2337.3,
         "upper_level": "C¹Π",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -159,7 +159,7 @@
         "wavelength_nm": 231.31,
         "wavelength_angstrom": 2313.1,
         "upper_level": "C¹Π",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 1,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -170,7 +170,7 @@
         "wavelength_nm": 229.04,
         "wavelength_angstrom": 2290.4,
         "upper_level": "C¹Π",
-        "lower_level": "X¹Σ SYSTEM",
+        "lower_level": "X¹Σ",
         "intensity": 1,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -180,8 +180,8 @@
         "system": "D–X¹Σ SYSTEM",
         "wavelength_nm": 219.62,
         "wavelength_angstrom": 2196.2,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D",
+        "lower_level": "X¹Σ",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -191,8 +191,8 @@
         "system": "D–X¹Σ SYSTEM",
         "wavelength_nm": 219.25,
         "wavelength_angstrom": 2192.5,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D",
+        "lower_level": "X¹Σ",
         "intensity": 7,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -202,8 +202,8 @@
         "system": "D–X¹Σ SYSTEM",
         "wavelength_nm": 219.0,
         "wavelength_angstrom": 2190.0,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D",
+        "lower_level": "X¹Σ",
         "intensity": 9,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -213,8 +213,8 @@
         "system": "D–X¹Σ SYSTEM",
         "wavelength_nm": 218.89,
         "wavelength_angstrom": 2188.9,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D",
+        "lower_level": "X¹Σ",
         "intensity": 4,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -224,8 +224,8 @@
         "system": "D–X¹Σ SYSTEM",
         "wavelength_nm": 218.71,
         "wavelength_angstrom": 2187.1,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D",
+        "lower_level": "X¹Σ",
         "intensity": 10,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192
@@ -235,8 +235,8 @@
         "system": "D–X¹Σ SYSTEM",
         "wavelength_nm": 218.58,
         "wavelength_angstrom": 2185.8,
-        "upper_level": "Unknown",
-        "lower_level": "Unknown",
+        "upper_level": "D",
+        "lower_level": "X¹Σ",
         "intensity": 5,
         "source": "Pearse & Gaydon (1976) p.192",
         "page": 192

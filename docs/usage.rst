@@ -22,7 +22,13 @@ Click elements in the periodic table:
 * **Second click** (red) - Exclude this element
 * **Third click** (gray) - Reset to neutral
 
-**Example**: To find CO molecules, click C and O once each.
+**Example**: You know the system must include C, maybe O and H. You can Click C once (it should look green), then Use the **Exclude All** button to quickly exclude all elements at once:
+
+.. image:: exclude_all_button.png
+   :alt: Exclude All button
+   :width: 200px
+Then click O and H once, make them gray. The results will give C, CO, CH\ :sub:`2`\O, C\ :sub:`2`\H\ :sub:`4`\ etc. 
+
 
 2. Set Wavelength Range
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,37 +79,6 @@ Download your results:
 * **TXT** - Tab-separated text
 * **CSV** - For Excel/Sheets
 * **PNG** - Spectrum image
-
-Use Cases
----------
-
-LIBS Research
-~~~~~~~~~~~~~
-
-Laser Induced Breakdown Spectroscopy applications:
-
-1. Search for expected element emission lines
-2. Set wavelength range to your detector
-3. Generate spectrum with your instrument resolution
-4. Compare with experimental data
-
-Wavelength Calibration
-~~~~~~~~~~~~~~~~~~~~~~
-
-Find reference lines:
-
-1. Search broad wavelength range
-2. Select strong, well-known lines
-3. Export line positions for calibration software
-
-Plasma Diagnostics
-~~~~~~~~~~~~~~~~~~
-
-Identify unknown lines in plasma spectra:
-
-1. Enter wavelength of unknown line
-2. Filter by expected elements
-3. Match with database lines
 
 Troubleshooting
 ---------------

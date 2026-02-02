@@ -45,7 +45,7 @@ Setup
    bundle install
 
    # Run development server
-   bundle exec jekyll serve -l
+   bundle exec jekyll serve -l -H localhost
 
 Visit http://localhost:4000/MELT/
 
@@ -97,79 +97,31 @@ Create JSON file for each molecule:
      }
    ]
 
-**Required fields**: molecule, system, wavelength_nm, wavelength_angstrom, upper_level, lower_level, source, page
+**Required fields**: molecule, wavelength_nm, wavelength_angstrom, source
 
-**Optional fields**: intensity
+**Optional fields**: intensity, system, upper_level, lower_level, page
 
-Conversion Script
-~~~~~~~~~~~~~~~~~
-
-Python script to convert CSV to JSON:
-
-.. code-block:: python
-
-   import csv
-   import json
-
-   def csv_to_json(csv_file, json_file, molecule):
-       data = []
-       with open(csv_file, 'r') as f:
-           reader = csv.DictReader(f)
-           for row in reader:
-               entry = {
-                   "molecule": molecule,
-                   "system": row['system'],
-                   "wavelength_nm": float(row['wavelength_nm']),
-                   "wavelength_angstrom": float(row['wavelength_nm']) * 10,
-                   "upper_level": row['upper_level'],
-                   "lower_level": row['lower_level'],
-                   "intensity": float(row['intensity']) if row['intensity'] else None,
-                   "source": row['source'],
-                   "page": int(row['page']) if row['page'] else None
-               }
-               data.append(entry)
-
-       with open(json_file, 'w') as f:
-           json.dump(data, f, indent=2, ensure_ascii=False)
-
-   # Usage
-   csv_to_json('CO_data.csv', 'CO.json', 'CO')
 
 Adding to MELT
 ~~~~~~~~~~~~~~
 
 1. Place JSON file in ``assets/data/YourDatabase/``
-2. Edit ``assets/js/molecular-lines.js``
+2. Edit ``assets/data/data-manifest.json``
 3. Add file path to loading array:
 
-.. code-block:: javascript
-
-   const files = [
-     'assets/data/Pearse&Gaydon/CO.json',
-     // ... existing files
-     'assets/data/YourDatabase/CO.json',  // Add here
-   ];
+.. code-block:: json
+   {
+   "description": "Manifest of all molecular emission line data files. Add new JSON files here to include them in searches.",
+      "files": [
+         "Pearse&Gaydon/page_029.json",
+         // ... existing files
+         "YourDatabase/EXAMPLE.json",  // Add here
+      ]
+   }
 
 4. Test locally
 5. Submit pull request
 
-Code Style
-----------
-
-JavaScript
-~~~~~~~~~~
-
-* 2-space indentation
-* Semicolons required
-* Descriptive variable names
-* Comments for complex logic
-
-JSON Data
-~~~~~~~~~
-
-* 2-space indentation
-* UTF-8 encoding
-* Validate syntax before committing
 
 Commit Messages
 ~~~~~~~~~~~~~~~
@@ -197,18 +149,17 @@ Before submitting changes:
 2. **Test search** - Search for wavelength range with new data
 3. **Test spectrum** - Generate spectrum from new lines
 4. **Test export** - Download CSV/TXT/PNG
-5. **Validate JSON** - Use ``python -m json.tool file.json``
 
 Documentation
 -------------
 
-Building Docs
+Building Docs Locally
 ~~~~~~~~~~~~~
 
 .. code-block:: bash
 
    cd docs
-   pip install -r ../docs-requirements.txt
+   pip install -r requirements.txt
    make html
 
 View at ``docs/_build/html/index.html``
@@ -216,7 +167,7 @@ View at ``docs/_build/html/index.html``
 Updating Docs
 ~~~~~~~~~~~~~
 
-Documentation uses reStructuredText (.rst) format. Edit files in ``docs/`` directory and build locally to preview.
+Edit files in ``docs/`` directory and build locally to preview. Then simply push the change to github. Our documentation site https://melt.readthedocs.io/en/latest/index.html will update automatically.
 
 Support
 -------

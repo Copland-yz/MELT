@@ -22,12 +22,11 @@ Click elements in the periodic table:
 * **Second click** (red) - Exclude this element
 * **Third click** (gray) - Reset to neutral
 
-**Example**: You know the system must include C, maybe O and H. You can Click C once (it should look green), then Use the **Exclude All** button to quickly exclude all elements at once:
+**Example**: You know the system must include C, maybe O and H. You can Click C once (it should look green), then use the |exclude_all| button to quickly exclude all elements at once. Then click O and H once, make them gray. The results will give C, CO, CH\ :sub:`2`\ O, C\ :sub:`2`\ H\ :sub:`4`\  etc.
 
-.. image:: exclude_all_button.png
-   :alt: Exclude All button
-   :width: 200px
-Then click O and H once, make them gray. The results will give C, CO, CH\ :sub:`2`\O, C\ :sub:`2`\H\ :sub:`4`\ etc. 
+.. |exclude_all| image:: exclude_all_button.png
+   :alt: Exclude All
+   :height: 1em 
 
 
 2. Set Wavelength Range

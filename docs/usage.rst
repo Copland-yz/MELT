@@ -26,7 +26,7 @@ Click elements in the periodic table:
 
 .. |exclude_all| image:: exclude_all_button.png
    :alt: Exclude All
-   :height: 1em 
+   :height: 1.2em 
 
 
 2. Set Wavelength Range

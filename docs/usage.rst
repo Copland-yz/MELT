@@ -22,7 +22,7 @@ Click elements in the periodic table:
 * **Second click** (red) - Exclude this element
 * **Third click** (gray) - Reset to neutral
 
-**Example**: You know the system must include C, maybe O and H. You can Click C once (it should look green), then use the |exclude_all| button to quickly exclude all elements at once. Then click O and H once, make them gray. The results will give C, CO, CH\ :sub:`2`\ O, C\ :sub:`2`\ H\ :sub:`4`\  etc.
+**Example**: You know the system must include C, maybe O and H. You can Click C once (it should look green), then use the |exclude_all| button to quickly exclude all elements at once. Then click O and H once, make them gray. The results will give C\ :sub:`2`\, CO, CH\ :sub:`2`\ O, C\ :sub:`2`\ H\ :sub:`4`\  etc.
 
 .. |exclude_all| image:: exclude_all_button.png
    :alt: Exclude All

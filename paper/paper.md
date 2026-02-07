@@ -63,6 +63,10 @@ Future work could involve several key improvements:
 * Deploy it on a dedicated domain and apply server-side computation to save memory on the client side and to enhance safety.
 * Continue proofreading of the original text, and develop a plan to handle special molecules with different data format.
 
+# AI Usage Disclosure
+
+The author used Claude Sonnet 4.5 and Opus 4.5 in writing the javascript file. The code is reviewed by the author and the functions have been tested by the author and users.
+
 # Acknowledgements
 
 The author wishes to thank Chun Huang's suggestions, the open-source community, the creators of the Jekyll framework for providing the tools of building the website.

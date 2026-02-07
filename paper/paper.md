@@ -1,5 +1,5 @@
 ---
-title: 'MELT: An Interactive Web-Based Database for Molecular Emission Spectroscopy‘
+title: 'MELT: An Interactive Web-Based Database for Molecular Emission Spectroscopy'
 tags:
   - Database
   - LIBS

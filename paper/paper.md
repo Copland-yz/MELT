@@ -11,14 +11,12 @@ authors:
     orcid: 0000-0001-6713-0254
     corresponding: true
     affiliation: 1
-authors:
   - name: Hongkun Quincy Qu
     orcid: 0000-0002-5626-8298
     affiliation: 2
 affiliations:
   - name: Department of Earth, Environmental, and Planetary Sciences, Washington University in St. Louis, MO 63130, USA
     index: 1
-affiliations:
   - name: Aerospace Information Technology University, Jinan 250200, China
     index: 2
 date: 3 February 2026
